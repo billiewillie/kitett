@@ -109,151 +109,151 @@ const dialogToggle = () => {
     <div class="relative container flex items-center justify-between">
       <BaseLogo :with-text="true"/>
       <BaseNavigation/>
-<!--      <Dialog :open="isOpen">-->
-<!--        <DialogTrigger as-child>-->
-<!--          <Button-->
-<!--            @click="isOpen = true"-->
-<!--            class="uppercase hidden xl:block">-->
-<!--            задать вопрос-->
-<!--          </Button>-->
-<!--        </DialogTrigger>-->
-<!--        <DialogContent-->
-<!--          @close="dialogToggle"-->
-<!--          @openAutoFocus="(event) => event.preventDefault()"-->
-<!--          class="w-[90%] sm:max-w-xl bg-background p-8 flex flex-col gap-y-8 rounded">-->
-<!--          <DialogHeader>-->
-<!--            <DialogTitle class="text-center">Ваш вопрос</DialogTitle>-->
-<!--            <VisuallyHidden>-->
-<!--              <DialogDescription>-->
-<!--                Anyone who has this link will be able to view this.-->
-<!--              </DialogDescription>-->
-<!--            </VisuallyHidden>-->
-<!--          </DialogHeader>-->
-<!--          <div class="flex items-center space-x-2">-->
-<!--            <form @submit="onSubmit">-->
-<!--              <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">-->
-<!--                <div class="flex flex-col gap-[16px] w-full">-->
-<!--                  <FormField-->
-<!--                    v-slot="{ componentField }"-->
-<!--                    name="name">-->
-<!--                    <FormItem>-->
-<!--                      <FormControl>-->
-<!--                        <Input-->
-<!--                          type="text"-->
-<!--                          :id="nameId"-->
-<!--                          placeholder="ФИО"-->
-<!--                          v-bind="componentField"/>-->
-<!--                      </FormControl>-->
-<!--                      <FormMessage/>-->
-<!--                    </FormItem>-->
-<!--                  </FormField>-->
+      <Dialog :open="isOpen">
+        <DialogTrigger as-child>
+          <Button
+            @click="isOpen = true"
+            class="uppercase hidden xl:block">
+            задать вопрос
+          </Button>
+        </DialogTrigger>
+        <DialogContent
+          @close="dialogToggle"
+          @openAutoFocus="(event) => event.preventDefault()"
+          class="w-[90%] sm:max-w-xl bg-background p-8 flex flex-col gap-y-8 rounded">
+          <DialogHeader>
+            <DialogTitle class="text-center">Ваш вопрос</DialogTitle>
+            <VisuallyHidden>
+              <DialogDescription>
+                Anyone who has this link will be able to view this.
+              </DialogDescription>
+            </VisuallyHidden>
+          </DialogHeader>
+          <div class="flex items-center space-x-2">
+            <form @submit="onSubmit">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
+                <div class="flex flex-col gap-[16px] w-full">
+                  <FormField
+                    v-slot="{ componentField }"
+                    name="name">
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          type="text"
+                          :id="nameId"
+                          placeholder="ФИО"
+                          v-bind="componentField"/>
+                      </FormControl>
+                      <FormMessage/>
+                    </FormItem>
+                  </FormField>
 
-<!--                  <FormField-->
-<!--                    v-slot="{ componentField }"-->
-<!--                    name="phone">-->
-<!--                    <FormItem>-->
-<!--                      <FormControl>-->
-<!--                        <Input-->
-<!--                          type="tel"-->
-<!--                          :id="phoneId"-->
-<!--                          placeholder="Телефон"-->
-<!--                          v-bind="componentField"/>-->
-<!--                      </FormControl>-->
-<!--                      <FormMessage/>-->
-<!--                    </FormItem>-->
-<!--                  </FormField>-->
+                  <FormField
+                    v-slot="{ componentField }"
+                    name="phone">
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          type="tel"
+                          :id="phoneId"
+                          placeholder="Телефон"
+                          v-bind="componentField"/>
+                      </FormControl>
+                      <FormMessage/>
+                    </FormItem>
+                  </FormField>
 
-<!--                  <FormField-->
-<!--                    v-slot="{ componentField }"-->
-<!--                    name="email">-->
-<!--                    <FormItem>-->
-<!--                      <FormControl>-->
-<!--                        <Input-->
-<!--                          type="email"-->
-<!--                          :id="emailId"-->
-<!--                          placeholder="E-mail"-->
-<!--                          v-bind="componentField"/>-->
-<!--                      </FormControl>-->
-<!--                      <FormMessage/>-->
-<!--                    </FormItem>-->
-<!--                  </FormField>-->
+                  <FormField
+                    v-slot="{ componentField }"
+                    name="email">
+                    <FormItem>
+                      <FormControl>
+                        <Input
+                          type="email"
+                          :id="emailId"
+                          placeholder="E-mail"
+                          v-bind="componentField"/>
+                      </FormControl>
+                      <FormMessage/>
+                    </FormItem>
+                  </FormField>
 
-<!--                  <FormField-->
-<!--                    v-slot="{ componentField }"-->
-<!--                    name="topic">-->
-<!--                    <FormItem>-->
-<!--                      <Select v-bind="componentField">-->
-<!--                        <FormControl>-->
-<!--                          <SelectTrigger :id="topicId">-->
-<!--                            <SelectValue-->
-<!--                              placeholder="Тема обращения"-->
-<!--                              class="text-secondary"/>-->
-<!--                          </SelectTrigger>-->
-<!--                        </FormControl>-->
-<!--                        <SelectContent>-->
-<!--                          <SelectGroup>-->
-<!--                            <SelectItem-->
-<!--                              v-for="item in SELECT_OPTIONS"-->
-<!--                              :key="item.id"-->
-<!--                              :value="item.value">-->
-<!--                              {{ item.value }}-->
-<!--                            </SelectItem>-->
-<!--                          </SelectGroup>-->
-<!--                        </SelectContent>-->
-<!--                      </Select>-->
-<!--                      <FormMessage/>-->
-<!--                    </FormItem>-->
-<!--                  </FormField>-->
+                  <FormField
+                    v-slot="{ componentField }"
+                    name="topic">
+                    <FormItem>
+                      <Select v-bind="componentField">
+                        <FormControl>
+                          <SelectTrigger :id="topicId">
+                            <SelectValue
+                              placeholder="Тема обращения"
+                              class="text-secondary"/>
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectGroup>
+                            <SelectItem
+                              v-for="item in SELECT_OPTIONS"
+                              :key="item.id"
+                              :value="item.value">
+                              {{ item.value }}
+                            </SelectItem>
+                          </SelectGroup>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage/>
+                    </FormItem>
+                  </FormField>
 
-<!--                </div>-->
+                </div>
 
-<!--                <FormField-->
-<!--                  v-slot="{ componentField }"-->
-<!--                  name="question">-->
-<!--                  <FormItem>-->
-<!--                    <div class="flex flex-col h-full">-->
-<!--                      <FormControl>-->
-<!--                      <Textarea-->
-<!--                        placeholder="Ваш вопрос"-->
-<!--                        class="resize-none flex-auto flex"-->
-<!--                        :id="questionId"-->
-<!--                        v-bind="componentField"-->
-<!--                      />-->
-<!--                      </FormControl>-->
-<!--                      <FormMessage/>-->
-<!--                    </div>-->
-<!--                  </FormItem>-->
-<!--                </FormField>-->
+                <FormField
+                  v-slot="{ componentField }"
+                  name="question">
+                  <FormItem>
+                    <div class="flex flex-col h-full">
+                      <FormControl>
+                      <Textarea
+                        placeholder="Ваш вопрос"
+                        class="resize-none flex-auto flex"
+                        :id="questionId"
+                        v-bind="componentField"
+                      />
+                      </FormControl>
+                      <FormMessage/>
+                    </div>
+                  </FormItem>
+                </FormField>
 
-<!--                <Button-->
-<!--                  type="submit"-->
-<!--                  class="uppercase">отправить-->
-<!--                </Button>-->
+                <Button
+                  type="submit"
+                  class="uppercase">отправить
+                </Button>
 
-<!--                <FormField-->
-<!--                  v-slot="{ value, handleChange }"-->
-<!--                  type="checkbox"-->
-<!--                  name="check">-->
-<!--                  <FormItem class="flex flex-row items-start gap-x-3 space-y-0 rounded-md">-->
-<!--                    <FormControl :id="checkId">-->
-<!--                      <Checkbox-->
-<!--                        :checked="value"-->
-<!--                        @update:checked="handleChange"/>-->
-<!--                    </FormControl>-->
-<!--                    <div class="space-y-1 leading-none">-->
-<!--                      <FormLabel :forId="checkId">-->
-<!--                        Я согласен(на) на обработку персональных данных.-->
-<!--                        ООО "БиоЛайн" гарантирует конфиденциальность получаемой информации.-->
-<!--                      </FormLabel>-->
-<!--                      <FormMessage/>-->
-<!--                    </div>-->
-<!--                  </FormItem>-->
-<!--                </FormField>-->
-<!--              </div>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </DialogContent>-->
-<!--      </Dialog>-->
+                <FormField
+                  v-slot="{ value, handleChange }"
+                  type="checkbox"
+                  name="check">
+                  <FormItem class="flex flex-row items-start gap-x-3 space-y-0 rounded-md">
+                    <FormControl :id="checkId">
+                      <Checkbox
+                        :checked="value"
+                        @update:checked="handleChange"/>
+                    </FormControl>
+                    <div class="space-y-1 leading-none">
+                      <FormLabel :forId="checkId">
+                        Я согласен(на) на обработку персональных данных.
+                        ООО "БиоЛайн" гарантирует конфиденциальность получаемой информации.
+                      </FormLabel>
+                      <FormMessage/>
+                    </div>
+                  </FormItem>
+                </FormField>
+              </div>
+            </form>
+          </div>
+        </DialogContent>
+      </Dialog>
       <Button
         as-child
         variant="outline">
