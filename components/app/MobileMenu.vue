@@ -15,15 +15,6 @@ import {
 import { VisuallyHidden } from 'radix-vue';
 import { useLocation } from '~/composables/useLocation';
 import { ref } from 'vue';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle, DialogTrigger,
-} from '~/components/ui/dialog';
-import { Label } from '~/components/ui/label';
 import { Input } from '~/components/ui/input';
 import {
   AlertDialog,
