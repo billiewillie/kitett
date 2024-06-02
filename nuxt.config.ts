@@ -78,4 +78,11 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	app: {
+		head: {
+			meta: [
+				{name: 'robots', content: 'noindex, nofollow'},
+			]
+		}
+	}
 })
