@@ -22,7 +22,7 @@ const breadcrumbs: Breadcrumb[] = [
 <template>
   <section class="first-screen relative pb-[120px] mb-[75px]">
     <BaseImage
-      image="./img/about-company.jpg"
+      image="/img/about-company.jpg"
       class="flex w-full h-full absolute top-0 left-0 -z-10 bg-[#95B9DD]"
       img-class="object-cover w-full h-full"
     />
