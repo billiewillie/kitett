@@ -181,7 +181,6 @@ function scrollToMap() {
           v-for="(branch, key) in branches"
           :key="key">
           <li
-            v-if="key !== 'spb' && (location.currentLocation === 'by-ru' && key === 'minsk')"
             class="card">
             <h3 class="title text-[18px] font-bold">{{ branch.city }}</h3>
             <br>
