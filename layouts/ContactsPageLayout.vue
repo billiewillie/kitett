@@ -34,7 +34,7 @@ const breadcrumbs: Breadcrumb[] = [
   },
 ];
 
-const branches: Record<string, Branch> = {
+const branches = {
   spb: {
     id: 1,
     country: 'Россия',
