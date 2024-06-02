@@ -13,6 +13,14 @@ export default defineNuxtConfig({
 	image: {
 		format: ['webp'],
 	},
+	googleFonts: {
+		families: {
+			Montserrat: [400, 500, 700],
+			Comfortaa: [400, 700],
+		},
+		display: 'swap',
+		subsets: ['cyrillic', 'latin'],
+	},
 	tailwindcss: {
 		cssPath: ['~/assets/css/main.css', {injectPosition: 'first'}],
 		configPath: 'tailwind.config',

@@ -39,13 +39,13 @@ import IconLogo from "~/components/icon/Logo.vue";
             :href="link.href"
             target="_blank"
             class="flex items-center justify-center bg-primary rounded w-[53px] h-[53px]">
-<!--            <Icon-->
-<!--              size="40px"-->
-<!--              :name="link.icon"-->
-<!--              color="white"/>-->
+            <Icon
+              size="40px"
+              :name="link.icon"
+              color="white"/>
           </NuxtLink>
         </div>
-<!--        <BaseLogo class="flex w-full justify-center xl:justify-end"/>-->
+        <BaseLogo class="flex w-full justify-center xl:justify-end"/>
       </div>
     </div>
   </footer>
