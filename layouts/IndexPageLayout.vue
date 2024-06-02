@@ -118,9 +118,9 @@ import {VisuallyHidden} from 'radix-vue';
       <Carousel
         class="relative w-full"
         :opts="{
-            align: 'start',
-            loop: true,
-          }"
+          align: 'start',
+          loop: true,
+        }"
       >
         <CarouselContent class="-ml-1 items-stretch">
           <CarouselItem
@@ -170,43 +170,6 @@ import {VisuallyHidden} from 'radix-vue';
         <CarouselPrevious/>
         <CarouselNext/>
       </Carousel>
-
-      <div class="flex justify-center">
-        <div
-          v-for="video in VIDEOS"
-          :key="video.id"
-          class="flex flex-col items-center w-full xl:py-4 card xl:w-1/3">
-          <BaseImage
-            :image="video.cover"
-            img-class="w-full h-full object-cover"
-            class="w-full mb-[24px] rounded overflow-hidden"
-          />
-          <h3 class="text-xl mb-[32px] font-display text-gray uppercase">
-            {{ video.title }}
-          </h3>
-          <Dialog>
-            <DialogTrigger as-child>
-              <Button class="uppercase text-[18px]">смотреть</Button>
-            </DialogTrigger>
-            <DialogContent class="max-w-[68%] h-[80%]">
-              <VisuallyHidden>
-                <DialogTitle/>
-                <DialogDescription/>
-              </VisuallyHidden>
-              <div>
-                <iframe
-                  width="100%"
-                  height="100%"
-                  :src="`${video.video}`"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen/>
-              </div>
-            </DialogContent>
-          </Dialog>
-        </div>
-      </div>
     </div>
   </section>
 
