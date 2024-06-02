@@ -42,12 +42,12 @@ const breadcrumbs: Breadcrumb[] = [
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
         <div class="relative z-10 col-span-2 w-full xl:min-h-[660px]">
           <BaseImage
-            image="./img/help-mom-articles/article-2-cover.jpg"
+            image="/img/help-mom-articles/article-2-cover.jpg"
             img-class="object-cover w-full h-full"
             class="rounded xl:rounded-tr-[191px] bg-[#9CA1A2]"
           />
           <NuxtImg
-            src="./img/cell-decorator.svg"
+            src="/img/cell-decorator.svg"
             class="hidden xl:block w-[88px] h-[88px] absolute -top-[12px] -left-[12px] -z-10"/>
         </div>
         <div class="flex flex-col justify-center w-full">
@@ -65,7 +65,7 @@ const breadcrumbs: Breadcrumb[] = [
         <div class="absolute left-[50%] top-[16%] md:top-[50%] md:left-[80%] xl:top-[80%] xl:left-[55.5%] w-[200px] h-[200px]">
           <div class="round-1 absolute w-[28px] h-[28px] rounded-full right-0 bottom-0 bg-notice"></div>
           <NuxtImg
-            src="./img/cell-decorator.svg"
+            src="/img/cell-decorator.svg"
             class="w-[88px] h-[88px] absolute bottom-[32px] right-[32px]"/>
           <div class="round-3 absolute w-[156px] h-[156px] rounded-full left-0 top-0 bg-[#EE7C00] opacity-20"></div>
         </div>
