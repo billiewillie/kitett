@@ -38,25 +38,25 @@ const VORONKI = ref([
     id: 1,
     title: '21 мм',
     type: 'S',
-    image: './img/products/voronki/voronki-21.jpg',
+    image: '/img/products/voronki/voronki-21.jpg',
   },
   {
     id: 2,
     title: '24 мм',
     type: 'S',
-    image: './img/products/voronki/voronki-24.jpg',
+    image: '/img/products/voronki/voronki-24.jpg',
   },
   {
     id: 3,
     title: '26 мм',
     type: 'S',
-    image: './img/products/voronki/voronki-26.jpg',
+    image: '/img/products/voronki/voronki-26.jpg',
   },
   {
     id: 4,
     title: '30 мм',
     type: 'S',
-    image: './img/products/voronki/voronki-30.jpg',
+    image: '/img/products/voronki/voronki-30.jpg',
   },
 ]);
 const selected_voronka = ref(VORONKI.value[0]);
