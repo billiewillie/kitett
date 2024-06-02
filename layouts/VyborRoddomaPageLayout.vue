@@ -45,7 +45,7 @@ const breadcrumbs: Breadcrumb[] = [
           <BaseImage
             image="/img/help-mom-articles/article-1-cover.jpg"
             img-class="object-cover w-full h-full"
-            class="rounded xl:rounded-tr-[191px] bg-[#9CA1A2]"
+            class="rounded xl:rounded-tr-[191px] bg-[#2363B6]"
           />
           <NuxtImg src="/img/cell-decorator.svg" class="hidden xl:block w-[88px] h-[88px] absolute -top-[12px] -left-[12px] -z-10"/>
         </div>
