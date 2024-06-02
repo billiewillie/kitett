@@ -42,7 +42,7 @@ const breadcrumbs: Breadcrumb[] = [
       <div class="relative z-10 col-span-2 w-full xl:min-h-[660px]">
         <video
           controls
-          src="../../../video/vebinar.mp4"
+          src="/video/vebinar.mp4"
           poster="/img/webinar.jpg"
           class="m-auto mb-16"></video>
         <NuxtImg
