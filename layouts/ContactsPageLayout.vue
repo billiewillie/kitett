@@ -143,6 +143,21 @@ function scrollToMap() {
               посмотреть на карте
             </Button>
           </li>
+          <li
+            v-if="key !== 'spb' && location.currentLocation === 'ru-ru'"
+            class="card">
+            <h3 class="title text-[18px] font-bold">{{ branch.city }}</h3>
+            <br>
+            <address class="not-italic 2xl:min-h-[48px]">{{ branch.address }}</address>
+            <br>
+            <p>тел.: {{ branch.phone }}</p>
+            <br>
+            <Button
+              class="text-[18px]"
+              @click="setCoordinates(branch.map);scrollToMap()">
+              посмотреть на карте
+            </Button>
+          </li>
         </template>
       </ul>
     </div>
