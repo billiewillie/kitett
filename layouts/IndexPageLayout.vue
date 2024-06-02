@@ -82,152 +82,151 @@ import {VisuallyHidden} from 'radix-vue';
   </section>
 
   <!--  advantages-->
-  <!--  <section class="mb-[72px] xl:mb-[100px]">-->
-  <!--    <div class="container">-->
-  <!--      <BaseTitle-->
-  <!--        title="преимущества"-->
-  <!--        tag="h2"-->
-  <!--        separator-style="top-[calc(50%-2px)] absolute"-->
-  <!--        text-style="text-center uppercase" />-->
-  <!--      <div class="grid grid-cols-1 gap-[32px] xl:gap-[72px] md:grid-cols-2 xl:grid-cols-4">-->
-  <!--        <div-->
-  <!--          v-for="advantage in ADVANTAGES"-->
-  <!--          :key="advantage.id"-->
-  <!--          class="flex flex-col w-full items-center">-->
-  <!--          <component-->
-  <!--            :is="advantage.icon"-->
-  <!--            class="w-[88px] h-[88px]" />-->
-  <!--          <Separator class="my-[24px] w-1/2 xl:w-full bg-separator-pattern h-[5px]" />-->
-  <!--          <h3 class="uppercase text-center text-xl text-gray leading-[1.4]">-->
-  <!--            {{ advantage.text }}-->
-  <!--          </h3>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </section>-->
+  <section class="mb-[72px] xl:mb-[100px]">
+    <div class="container">
+      <BaseTitle
+        title="преимущества"
+        tag="h2"
+        separator-style="top-[calc(50%-2px)] absolute"
+        text-style="text-center uppercase"/>
+      <div class="grid grid-cols-1 gap-[32px] xl:gap-[72px] md:grid-cols-2 xl:grid-cols-4">
+        <div
+          v-for="advantage in ADVANTAGES"
+          :key="advantage.id"
+          class="flex flex-col w-full items-center">
+          <component
+            :is="advantage.icon"
+            class="w-[88px] h-[88px]"/>
+          <Separator class="my-[24px] w-1/2 xl:w-full bg-separator-pattern h-[5px]"/>
+          <h3 class="uppercase text-center text-xl text-gray leading-[1.4]">
+            {{ advantage.text }}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--  video-->
-  <!--  <section class="mb-[72px] xl:mb-[100px]">-->
-  <!--    <div class="container">-->
-  <!--      <BaseTitle-->
-  <!--        title="видео"-->
-  <!--        tag="h2"-->
-  <!--        separator-style="top-[calc(50%-2px)] absolute"-->
-  <!--        text-style="text-center uppercase" />-->
+  <section class="mb-[72px] xl:mb-[100px]">
+    <div class="container">
+      <BaseTitle
+        title="видео"
+        tag="h2"
+        separator-style="top-[calc(50%-2px)] absolute"
+        text-style="text-center uppercase"/>
 
-  <!--      <Carousel-->
-  <!--        class="relative w-full"-->
-  <!--        :opts="{-->
-  <!--          align: 'start',-->
-  <!--          loop: true,-->
-  <!--        }"-->
-  <!--      >-->
-  <!--        <CarouselContent class="-ml-1 items-stretch">-->
-  <!--          <CarouselItem-->
-  <!--            v-for="video in VIDEOS"-->
-  <!--            :key="video.id"-->
-  <!--            class="pl-1 md:basis-1/2 xl:basis-1/3">-->
-  <!--            <div class="p-1 h-full">-->
-  <!--              <Card class="group h-full py-12 lg:border-background lg:shadow-none lg:hover:shadow-md lg:hover:border-accent transition-all">-->
-  <!--                <CardContent class="flex flex-col gap-y-12 items-center justify-center aspect-auto h-full">-->
+      <Carousel
+        class="relative w-full"
+        :opts="{
+            align: 'start',
+            loop: true,
+          }"
+      >
+        <CarouselContent class="-ml-1 items-stretch">
+          <CarouselItem
+            v-for="video in VIDEOS"
+            :key="video.id"
+            class="pl-1 md:basis-1/2 xl:basis-1/3">
+            <div class="p-1 h-full">
+              <Card class="group h-full py-12 lg:border-background lg:shadow-none lg:hover:shadow-md lg:hover:border-accent transition-all">
+                <CardContent class="flex flex-col gap-y-12 items-center justify-center aspect-auto h-full">
 
-  <!--                  <BaseImage-->
-  <!--                    :image="video.cover"-->
-  <!--                    img-class="w-full h-full object-cover"-->
-  <!--                    class="w-full rounded overflow-hidden h-full"-->
-  <!--                  />-->
+                  <BaseImage
+                    :image="video.cover"
+                    img-class="w-full h-full object-cover"
+                    class="w-full rounded overflow-hidden h-full"
+                  />
 
-  <!--                  <h3 class="text-xl font-display text-gray uppercase">-->
-  <!--                    {{ video.title }}-->
-  <!--                  </h3>-->
+                  <h3 class="text-xl font-display text-gray uppercase">
+                    {{ video.title }}
+                  </h3>
 
-  <!--                  <Dialog>-->
-  <!--                    <DialogTrigger as-child>-->
-  <!--                      <Button class="uppercase text-[18px]">смотреть</Button>-->
-  <!--                    </DialogTrigger>-->
-  <!--                    <DialogContent class="max-w-[68%] h-[80%]">-->
-  <!--                      <VisuallyHidden>-->
-  <!--                        <DialogTitle />-->
-  <!--                        <DialogDescription />-->
-  <!--                      </VisuallyHidden>-->
-  <!--                      <div>-->
-  <!--                        <iframe-->
-  <!--                          width="100%"-->
-  <!--                          height="100%"-->
-  <!--                          :src="`${video.video}`"-->
-  <!--                          title="YouTube video player"-->
-  <!--                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"-->
-  <!--                          referrerpolicy="strict-origin-when-cross-origin"-->
-  <!--                          allowfullscreen />-->
-  <!--                      </div>-->
-  <!--                    </DialogContent>-->
-  <!--                  </Dialog>-->
-  <!--                </CardContent>-->
-  <!--              </Card>-->
-  <!--            </div>-->
-  <!--          </CarouselItem>-->
-  <!--        </CarouselContent>-->
-  <!--        <CarouselPrevious />-->
-  <!--        <CarouselNext />-->
-  <!--      </Carousel>-->
+                  <Dialog>
+                    <DialogTrigger as-child>
+                      <Button class="uppercase text-[18px]">смотреть</Button>
+                    </DialogTrigger>
+                    <DialogContent class="max-w-[68%] h-[80%]">
+                      <VisuallyHidden>
+                        <DialogTitle/>
+                        <DialogDescription/>
+                      </VisuallyHidden>
+                      <div>
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          :src="`${video.video}`"
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen/>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious/>
+        <CarouselNext/>
+      </Carousel>
 
-  <!--      &lt;!&ndash;      <div class="flex justify-center">&ndash;&gt;-->
-  <!--      &lt;!&ndash;        <div&ndash;&gt;-->
-  <!--      &lt;!&ndash;          v-for="video in VIDEOS"&ndash;&gt;-->
-  <!--      &lt;!&ndash;          :key="video.id"&ndash;&gt;-->
-  <!--      &lt;!&ndash;          class="flex flex-col items-center w-full xl:py-4 card xl:w-1/3">&ndash;&gt;-->
-  <!--      &lt;!&ndash;          <BaseImage&ndash;&gt;-->
-  <!--      &lt;!&ndash;            :image="video.cover"&ndash;&gt;-->
-  <!--      &lt;!&ndash;            img-class="w-full h-full object-cover"&ndash;&gt;-->
-  <!--      &lt;!&ndash;            class="w-full mb-[24px] rounded overflow-hidden"&ndash;&gt;-->
-  <!--      &lt;!&ndash;          />&ndash;&gt;-->
-  <!--      &lt;!&ndash;          <h3 class="text-xl mb-[32px] font-display text-gray uppercase">&ndash;&gt;-->
-  <!--      &lt;!&ndash;            {{ video.title }}&ndash;&gt;-->
-  <!--      &lt;!&ndash;          </h3>&ndash;&gt;-->
-  <!--      &lt;!&ndash;          <Dialog>&ndash;&gt;-->
-  <!--      &lt;!&ndash;            <DialogTrigger as-child>&ndash;&gt;-->
-  <!--      &lt;!&ndash;              <Button class="uppercase text-[18px]">смотреть</Button>&ndash;&gt;-->
-  <!--      &lt;!&ndash;            </DialogTrigger>&ndash;&gt;-->
-  <!--      &lt;!&ndash;            <DialogContent class="max-w-[68%] h-[80%]">&ndash;&gt;-->
-  <!--      &lt;!&ndash;              <VisuallyHidden>&ndash;&gt;-->
-  <!--      &lt;!&ndash;                <DialogTitle />&ndash;&gt;-->
-  <!--      &lt;!&ndash;                <DialogDescription />&ndash;&gt;-->
-  <!--      &lt;!&ndash;              </VisuallyHidden>&ndash;&gt;-->
-  <!--      &lt;!&ndash;              <div>&ndash;&gt;-->
-  <!--      &lt;!&ndash;                <iframe&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  width="100%"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  height="100%"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  :src="`${video.video}`"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  title="YouTube video player"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  frameborder="0"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  referrerpolicy="strict-origin-when-cross-origin"&ndash;&gt;-->
-  <!--      &lt;!&ndash;                  allowfullscreen />&ndash;&gt;-->
-  <!--      &lt;!&ndash;              </div>&ndash;&gt;-->
-  <!--      &lt;!&ndash;            </DialogContent>&ndash;&gt;-->
-  <!--      &lt;!&ndash;          </Dialog>&ndash;&gt;-->
-  <!--      &lt;!&ndash;        </div>&ndash;&gt;-->
-  <!--      &lt;!&ndash;      </div>&ndash;&gt;-->
-  <!--    </div>-->
-  <!--  </section>-->
+      <div class="flex justify-center">
+        <div
+          v-for="video in VIDEOS"
+          :key="video.id"
+          class="flex flex-col items-center w-full xl:py-4 card xl:w-1/3">
+          <BaseImage
+            :image="video.cover"
+            img-class="w-full h-full object-cover"
+            class="w-full mb-[24px] rounded overflow-hidden"
+          />
+          <h3 class="text-xl mb-[32px] font-display text-gray uppercase">
+            {{ video.title }}
+          </h3>
+          <Dialog>
+            <DialogTrigger as-child>
+              <Button class="uppercase text-[18px]">смотреть</Button>
+            </DialogTrigger>
+            <DialogContent class="max-w-[68%] h-[80%]">
+              <VisuallyHidden>
+                <DialogTitle/>
+                <DialogDescription/>
+              </VisuallyHidden>
+              <div>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  :src="`${video.video}`"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen/>
+              </div>
+            </DialogContent>
+          </Dialog>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!--  contact-form-->
-  <!--  <section class="relative py-[72px]">-->
-  <!--    <div class="container flex">-->
-  <!--      <div class="flex flex-col xl:w-1/2 xl:pr-[72px]">-->
-  <!--        <p class="text-gray font-display text-2xl xl:text-[30px] text-secondary font-bold">-->
-  <!--          Заполните форму с контактными данными и наш специалист свяжется с Вами:-->
-  <!--        </p>-->
-  <!--        <Separator class="my-[40px] h-[5px] bg-separator-pattern" />-->
-  <!--        <BaseForm />-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--    <BaseImage-->
-  <!--      image="./img/index-contacts-bg.jpg"-->
-  <!--      class="hidden xl:flex absolute overflow-hidden top-0 left-1/2 w-1/2 h-full rounded-tl-[300px] bg-[#9CA1A2]"-->
-  <!--      img-class="object-cover w-full h-full"-->
-  <!--    />-->
-  <!--  </section>-->
+  <section class="relative py-[72px]">
+    <div class="container flex">
+      <div class="flex flex-col xl:w-1/2 xl:pr-[72px]">
+        <p class="text-gray font-display text-2xl xl:text-[30px] text-secondary font-bold">
+          Заполните форму с контактными данными и наш специалист свяжется с Вами:
+        </p>
+        <Separator class="my-[40px] h-[5px] bg-separator-pattern"/>
+        <BaseForm/>
+      </div>
+    </div>
+    <BaseImage
+      image="/img/index-contacts-bg.jpg"
+      class="hidden xl:flex absolute overflow-hidden top-0 left-1/2 w-1/2 h-full rounded-tl-[300px] bg-[#9CA1A2]"
+      img-class="object-cover w-full h-full"
+    />
+  </section>
 </template>
 
 <style>
