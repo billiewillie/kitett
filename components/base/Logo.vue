@@ -22,12 +22,9 @@ const props = withDefaults(defineProps<Props>(), {
     <div
       class="flex xl:justify-center"
       :class="{'xl:w-[170px]': withText}">
-<!--      <NuxtImg-->
-<!--        src="/img/logo.svg"-->
-<!--        width="100"/>-->
-      <img
+      <NuxtImg
         src="/img/logo.svg"
-        alt="">
+        width="100"/>
     </div>
     <p
       v-if="withText"
