@@ -1,39 +1,39 @@
-<!--<script-->
-<!--  setup-->
-<!--  lang="ts">-->
-<!--import { useLocation } from '~/composables/useLocation';-->
-<!--import type { Breadcrumb } from '~/types';-->
-<!--import HelpMomNavigation from '~/components/base/HelpMomNavigation.vue';-->
+<script
+  setup
+  lang="ts">
+import {useLocation} from '~/composables/useLocation';
+import type {Breadcrumb} from '~/types';
+import HelpMomNavigation from '~/components/base/HelpMomNavigation.vue';
 
-<!--const location = useLocation();-->
+const location = useLocation();
 
-<!--const breadcrumbs: Breadcrumb[] = [-->
-<!--  {-->
-<!--    id: 1,-->
-<!--    title: 'главная',-->
-<!--    link: `/${location.value.currentLocation}`,-->
-<!--  },-->
-<!--  {-->
-<!--    id: 2,-->
-<!--    title: 'полезная информация',-->
-<!--    link: `/${location.value.currentLocation}/help-mom`,-->
-<!--  },-->
-<!--  {-->
-<!--    id: 3,-->
-<!--    title: 'Вебинар «Секреты эффективного сцеживания»',-->
-<!--  },-->
-<!--];-->
-<!--</script>-->
+const breadcrumbs: Breadcrumb[] = [
+  {
+    id: 1,
+    title: 'главная',
+    link: `/${location.value.currentLocation}`,
+  },
+  {
+    id: 2,
+    title: 'полезная информация',
+    link: `/${location.value.currentLocation}/help-mom`,
+  },
+  {
+    id: 3,
+    title: 'Вебинар «Секреты эффективного сцеживания»',
+  },
+];
+</script>
 
 <template>
   <section class="first-screen">
     <div class="container">
-<!--      <BaseBreadcrumb :links="breadcrumbs" />-->
-<!--      <BaseTitle-->
-<!--        title="Вебинар «Секреты эффективного сцеживания»"-->
-<!--        tag="h1"-->
-<!--        separator-style="top-[calc(50%-2px)] absolute"-->
-<!--        text-style="text-center uppercase" />-->
+      <BaseBreadcrumb :links="breadcrumbs" />
+      <BaseTitle
+        title="Вебинар «Секреты эффективного сцеживания»"
+        tag="h1"
+        separator-style="top-[calc(50%-2px)] absolute"
+        text-style="text-center uppercase" />
     </div>
   </section>
 
