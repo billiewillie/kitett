@@ -1,5 +1,7 @@
-<script setup lang="ts">
-import { type HTMLAttributes, computed } from 'vue'
+<script
+  setup
+  lang="ts">
+import { type HTMLAttributes, computed } from 'vue';
 import {
   AlertDialogContent,
   type AlertDialogContentEmits,
@@ -7,25 +9,26 @@ import {
   AlertDialogOverlay,
   AlertDialogPortal,
   useForwardPropsEmits,
-} from 'radix-vue'
-import { cn } from '@/lib/utils'
+} from 'radix-vue';
+import { cn } from '@/lib/utils';
 
-const props = defineProps<AlertDialogContentProps & { class?: HTMLAttributes['class'] }>()
-const emits = defineEmits<AlertDialogContentEmits>()
+const props = defineProps<AlertDialogContentProps & { class?: HTMLAttributes['class'] }>();
+const emits = defineEmits<AlertDialogContentEmits & { close: () => void }>();
 
 const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props
+  const { class: _, ...delegated } = props;
 
-  return delegated
-})
+  return delegated;
+});
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits)
+const forwarded = useForwardPropsEmits(delegatedProps, emits);
 </script>
 
 <template>
   <AlertDialogPortal>
     <AlertDialogOverlay
-      class="fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
+      @click="emits('close')"
+      class="fixed inset-0 z-50 bg-foreground opacity-60 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
     />
     <AlertDialogContent
       v-bind="forwarded"
