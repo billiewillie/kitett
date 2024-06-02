@@ -46,7 +46,7 @@ const breadcrumbs: Breadcrumb[] = [
           poster="/img/webinar.jpg"
           class="m-auto mb-16"></video>
         <NuxtImg
-          src="./img/cell-decorator.svg"
+          src="/img/cell-decorator.svg"
           class="hidden xl:block w-[88px] h-[88px] absolute -top-[12px] -left-[12px] -z-10"/>
       </div>
       <div class="absolute bg-notice hidden xl:block rounded-full w-[472px] h-[472px] -left-[120px] top-[60px] -z-10"></div>
