@@ -15,11 +15,6 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <a
-    href="#"
-    class="flex items-center relative">
-    link
-  </a>
   <NuxtLink
     :to="`/${location.currentLocation}`"
     class="flex items-center relative"
