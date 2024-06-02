@@ -17,13 +17,13 @@ import {VisuallyHidden} from 'radix-vue';
   <section class="relative flex-col xl:flex-row mb-[75px] xl:pt-[72px] xl:pb-[216px]">
     <div class="relative xl:absolute order-1 mb-[32px] xl:mb-0 top-0 xl:left-1/2 w-full xl:w-1/2 min-h-[299px] md:min-h-[670px] xl:min-h-0 md:h-full">
       <BaseImage
-        image="./img/first-screen.jpg"
+        image="/img/first-screen.jpg"
         img-class="object-cover object-top w-full h-full flex"
         class="xl:rounded-tl-[350px] bg-[#9CA1A2] h-full z-10 relative"/>
       <div class="absolute left-[65%] top-[75%] md:top-[85%] md:left-[75%] xl:top-[32px] xl:-left-[32px] w-[120px] h-[120px] xl:w-[200px] xl:h-[200px]">
         <div class="round-1 absolute w-[28px] h-[28px] rounded-full left-0 top-0 bg-notice"></div>
         <NuxtImg
-          src="./img/cell-decorator.svg"
+          src="/img/cell-decorator.svg"
           class="w-[88px] h-[88px] absolute top-[32px] left-[32px]"/>
         <div class="round-3 absolute w-[156px] h-[156px] rounded-full right-0 bottom-0 bg-[#EE7C00] opacity-20"></div>
       </div>

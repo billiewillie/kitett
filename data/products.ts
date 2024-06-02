@@ -5,7 +5,7 @@ const products = {
       slug: 'klinicheskie-molokootsosy',
       title: 'Клинические молокоотсосы',
       description: 'для использования в родильных домах и перинатальных центрах',
-      img: './img/products/klinicheskie-molokootsosy.jpg',
+      img: '/img/products/klinicheskie-molokootsosy.jpg',
       productList: [
         {
           id: 11,
@@ -56,17 +56,17 @@ const products = {
             '</ul>' +
             '</li>' +
             '</ul>',
-          cover: './img/products/bytovye-molokootsosy/fisio/electr-molocootsos-fisio.jpg',
+          cover: '/img/products/bytovye-molokootsosy/fisio/electr-molocootsos-fisio.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/bytovye-molokootsosy/fisio/electr-molocootsos-fisio.jpg',
+              link: '/img/products/bytovye-molokootsosy/fisio/electr-molocootsos-fisio.jpg',
             },
             {
               id: 2,
               type: 'video',
-              cover: './img/video-covers/video-fisio-cover.jpg',
+              cover: '/img/video-covers/video-fisio-cover.jpg',
               link: 'https://www.youtube.com/embed/PmoRGrczn0Y?si=YzbCqhOo1Zoot0wU',
             },
           ],
@@ -190,17 +190,17 @@ const products = {
             '</ul>' +
             '</li>' +
             '</ul>',
-          cover: './img/products/bytovye-molokootsosy/fisio-pro/kitett_fisiopro.jpg',
+          cover: '/img/products/bytovye-molokootsosy/fisio-pro/kitett_fisiopro.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/bytovye-molokootsosy/fisio-pro/kitett_fisiopro.jpg',
+              link: '/img/products/bytovye-molokootsosy/fisio-pro/kitett_fisiopro.jpg',
             },
             {
               id: 2,
               type: 'video',
-              cover: './img/video-covers/video-1-cover.jpg',
+              cover: '/img/video-covers/video-1-cover.jpg',
               link: 'https://www.youtube.com/embed/oUEwG1aBGL4?si=SW6J4-Us5YXi6BPW',
             },
           ],
@@ -250,7 +250,7 @@ const products = {
       slug: 'bytovye-molokootsosy',
       title: 'Бытовые молокоотсосы',
       description: 'для бытового использования',
-      img: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
+      img: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
       productList: [
         {
           id: 21,
@@ -284,115 +284,115 @@ const products = {
             '<li>Подставка под контейнер (1 шт.)</li>' +
             '<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
             '</ul>',
-          cover: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
+          cover: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet.jpg',
             },
             {
               id: 22,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-1.jpg',
             },
             {
               id: 222,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-2.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange.jpg',
             },
             {
               id: 33,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-1.jpg',
             },
             {
               id: 333,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-2.jpg',
             },
             {
               id: 4,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green.jpg',
             },
             {
               id: 44,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green-1.jpg',
             },
             {
               id: 5,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue.jpg',
             },
             {
               id: 55,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
             },
             {
               id: 555,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-2.jpg',
             },
             {
               id: 6,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-box.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-box.jpg',
             },
             {
               id: 66,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-box-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-box-1.jpg',
             },
             {
               id: 7,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-1.jpg',
             },
             {
               id: 8,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-2.jpg',
             },
             {
               id: 9,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-3.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-3.jpg',
             },
             {
               id: 10,
               type: 'video',
-              cover: './img/video-covers/video-2-cover.jpg',
+              cover: '/img/video-covers/video-2-cover.jpg',
               link: 'https://www.youtube.com/embed/Ik8eQ_qh9sY?si=g_rM86a-Ds22s41m',
             },
             {
               id: 11,
               type: 'video',
-              cover: './img/video-covers/video-2-cover.jpg',
+              cover: '/img/video-covers/video-2-cover.jpg',
               link: 'https://www.youtube.com/embed/oEsP629UFLY?si=v6Buijy0Pi4Y9Fyi',
             },
             {
               id: 12,
               type: 'video',
-              cover: './img/video-covers/video-2-cover.jpg',
+              cover: '/img/video-covers/video-2-cover.jpg',
               link: 'https://www.youtube.com/embed/KRCz5pk9d5Y?si=YrJVEqLXxChAUSp7',
             },
             {
               id: 13,
               type: 'video',
-              cover: './img/video-covers/video-2-cover.jpg',
+              cover: '/img/video-covers/video-2-cover.jpg',
               link: 'https://www.youtube.com/embed/gvbRbShevTs?si=pjJEb9UOHMj4hb7z',
             },
           ],
@@ -456,109 +456,109 @@ const products = {
             '<li>Сетевой адаптер (1 шт.)</li>' +
             '<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
             '</ul>',
-          cover: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
+          cover: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-front.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-front.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-side.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-side.jpg',
             },
             {
               id: 4,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue.jpg',
             },
             {
               id: 5,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue-1.jpg',
             },
             {
               id: 6,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-green.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-green.jpg',
             },
             {
               id: 7,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-green-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-green-1.jpg',
             },
             {
               id: 8,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange.jpg',
             },
             {
               id: 9,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange-1.jpg',
             },
             {
               id: 10,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet.jpg',
             },
             {
               id: 11,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-1.jpg',
             },
             {
               id: 12,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-3.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-3.jpg',
             },
             {
               id: 13,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-1.jpg',
             },
             {
               id: 14,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-2.jpg',
             },
             {
               id: 15,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-3.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-3.jpg',
             },
             {
               id: 16,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-4.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-4.jpg',
             },
             {
               id: 17,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-5.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo-5.jpg',
             },
             {
               id: 18,
               type: 'video',
-              cover: './img/video-covers/video-3-cover.jpg',
+              cover: '/img/video-covers/video-3-cover.jpg',
               link: 'https://www.youtube.com/embed/rrb1NLfUmDI?si=c5LDp6YDki_YzE_S',
             },
             {
               id: 19,
               type: 'video',
-              cover: './img/video-covers/video-4-cover.jpg',
+              cover: '/img/video-covers/video-4-cover.jpg',
               link: 'https://www.youtube.com/embed/cFnBdiK8OC8?si=sGoTJ2ZyMfLZbvCv',
             },
             // {
             //   id: 20,
             //   type: 'video',
-            //   cover: './img/video-covers/video-solo-util-cover.webp',
+            //   cover: '/img/video-covers/video-solo-util-cover.webp',
             //   link: "https://www.youtube.com/embed/rfPwGGlhRSc?si=fYsn8Ji2f1P3wPEM",
             // },
           ],
@@ -627,27 +627,27 @@ const products = {
             '<li>Сетевой адаптер (1 шт.)</li>' +
             '<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
             '</ul>',
-          cover: './img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
+          cover: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-1.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-1.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-2.jpg',
+              link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-2.jpg',
             },
             {
               id: 4,
               type: 'video',
-              cover: './img/video-covers/video-6-cover.jpg',
+              cover: '/img/video-covers/video-6-cover.jpg',
               link: 'https://www.youtube.com/embed/0rYerAG6eYs?si=GNxzCo6CiIcO-Vsu',
             },
           ],
@@ -691,7 +691,7 @@ const products = {
       slug: 'aksessuary',
       title: 'Аксессуары',
       description: 'для сцеживания, хранения и транспортировки грудного молока, а также ухода за грудью',
-      img: './img/products/aksessuary/aksessuary.jpg',
+      img: '/img/products/aksessuary/aksessuary.jpg',
       productList: [
         {
           id: 31,
@@ -728,62 +728,62 @@ const products = {
             '<li>Подставка под контейнер (1 шт.)</li>' +
             '<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
             '</ul>',
-          cover: './img/products/aksessuary/voronki-kolor/voronki.jpg',
+          cover: '/img/products/aksessuary/voronki-kolor/voronki.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-box-front.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-box-front.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-box.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-box.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-blue.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-blue.jpg',
             },
             {
               id: 4,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-blue-1.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-blue-1.jpg',
             },
             {
               id: 5,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-green.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-green.jpg',
             },
             {
               id: 6,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-green-1.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-green-1.jpg',
             },
             {
               id: 7,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-orange.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-orange.jpg',
             },
             {
               id: 8,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-orange-1.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-orange-1.jpg',
             },
             {
               id: 9,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-violet.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-violet.jpg',
             },
             {
               id: 10,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronka-violet-1.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronka-violet-1.jpg',
             },
             {
               id: 11,
               type: 'image',
-              link: './img/products/aksessuary/voronki-kolor/voronki-1.jpg',
+              link: '/img/products/aksessuary/voronki-kolor/voronki-1.jpg',
             },
           ],
           instructions: [
@@ -843,82 +843,82 @@ const products = {
             '<li>Соединительная трубка (1шт.)</li>' +
             '<li>Флакон-переходник (1шт.)</li>' +
             '</ul>',
-          cover: './img/products/aksessuary/nabor-kolor/nabor_dlja_szegivania.jpg',
+          cover: '/img/products/aksessuary/nabor-kolor/nabor_dlja_szegivania.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/nabor_dlja_szegivania.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/nabor_dlja_szegivania.jpg',
             },
             {
               id: 4,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-box.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-box.jpg',
             },
             {
               id: 5,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-front.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-front.jpg',
             },
             {
               id: 6,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-blue.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-blue.jpg',
             },
             {
               id: 7,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-blue-1.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-blue-1.jpg',
             },
             {
               id: 8,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-blue-2.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-blue-2.jpg',
             },
             {
               id: 9,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-green.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-green.jpg',
             },
             {
               id: 10,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-green-1.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-green-1.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-green-2.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-green-2.jpg',
             },
             {
               id: 11,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-orange.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-orange.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-orange-1.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-orange-1.jpg',
             },
             {
               id: 12,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-orange-2.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-orange-2.jpg',
             },
             {
               id: 13,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-violet.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-violet.jpg',
             },
             {
               id: 14,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-violet-1.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-violet-1.jpg',
             },
             {
               id: 15,
               type: 'image',
-              link: './img/products/aksessuary/nabor-kolor/kit-violet-2.jpg',
+              link: '/img/products/aksessuary/nabor-kolor/kit-violet-2.jpg',
             },
           ],
           instructions: [
@@ -973,22 +973,22 @@ const products = {
             '<ul>' +
             '<li>2 контейнера с герметичными крышками</li>' +
             '</ul>',
-          cover: './img/products/aksessuary/fisio-bib/fisio-bib.jpg',
+          cover: '/img/products/aksessuary/fisio-bib/fisio-bib.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/fisio-bib/fisio-bib.jpg',
+              link: '/img/products/aksessuary/fisio-bib/fisio-bib.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/aksessuary/fisio-bib/fisio-bib-1.jpg',
+              link: '/img/products/aksessuary/fisio-bib/fisio-bib-1.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/aksessuary/fisio-bib/fisio-fresh-1.jpg',
+              link: '/img/products/aksessuary/fisio-bib/fisio-fresh-1.jpg',
             },
           ],
           instructions: [
@@ -1038,27 +1038,27 @@ const products = {
             '<li>Аккумуляторы холода FISIOCOOL (4 шт.)</li>' +
             '<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
             '</ul>',
-          cover: './img/products/aksessuary/fisio-fresh/fisio-fresh.jpg',
+          cover: '/img/products/aksessuary/fisio-fresh/fisio-fresh.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/fisio-fresh/fisio-fresh.jpg',
+              link: '/img/products/aksessuary/fisio-fresh/fisio-fresh.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/aksessuary/fisio-fresh/fisio-fresh-1.jpg',
+              link: '/img/products/aksessuary/fisio-fresh/fisio-fresh-1.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/aksessuary/fisio-fresh/fisio-fresh-2.jpg',
+              link: '/img/products/aksessuary/fisio-fresh/fisio-fresh-2.jpg',
             },
             {
               id: 4,
               type: 'image',
-              link: './img/products/aksessuary/fisio-fresh/fisio-fresh-3.jpg',
+              link: '/img/products/aksessuary/fisio-fresh/fisio-fresh-3.jpg',
             },
           ],
           instructions: [
@@ -1104,22 +1104,22 @@ const products = {
             '<ul>' +
             '<li>Тюбик с кремом</li>' +
             '</ul>',
-          cover: './img/products/aksessuary/fisio-lan/fisiolan_krem.jpg',
+          cover: '/img/products/aksessuary/fisio-lan/fisiolan_krem.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/fisio-lan/fisiolan_krem.jpg',
+              link: '/img/products/aksessuary/fisio-lan/fisiolan_krem.jpg',
             },
             {
               id: 2,
               type: 'image',
-              link: './img/products/aksessuary/fisio-lan/fisiolan_krem-1.jpg',
+              link: '/img/products/aksessuary/fisio-lan/fisiolan_krem-1.jpg',
             },
             {
               id: 3,
               type: 'image',
-              link: './img/products/aksessuary/fisio-lan/fisiolan_krem-2.jpg',
+              link: '/img/products/aksessuary/fisio-lan/fisiolan_krem-2.jpg',
             },
           ],
           instructions: [
@@ -1164,12 +1164,12 @@ const products = {
           },
           installed: [],
           set: '<p>30 шт.</p>',
-          cover: './img/products/aksessuary/fisio-pad/fisiopad.jpg',
+          cover: '/img/products/aksessuary/fisio-pad/fisiopad.jpg',
           gallery: [
             {
               id: 1,
               type: 'image',
-              link: './img/products/aksessuary/fisio-pad/fisiopad.jpg',
+              link: '/img/products/aksessuary/fisio-pad/fisiopad.jpg',
             },
           ],
           instructions: [
@@ -1199,7 +1199,7 @@ const products = {
       slug: 'individualnyj-podbor-voronki',
       title: 'Индивидуальный подбор воронки',
       description: 'для максимально комфортного и эффективного сцеживания',
-      img: './img/products/voronki/voronki.jpg',
+      img: '/img/products/voronki/voronki.jpg',
       productList: [],
     },
   ],
