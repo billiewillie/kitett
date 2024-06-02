@@ -1,7 +1,7 @@
 import type {Branch} from '~/types';
 
 const branches: Record<string, Branch> = {
-	spb: {
+	'spb': {
 		id: 1,
 		country: 'Россия',
 		index: 197022,
@@ -11,7 +11,7 @@ const branches: Record<string, Branch> = {
 		email: 'main@bioline.ru',
 		map: [30.3136, 59.972014],
 	},
-	minsk: {
+	'minsk': {
 		id: 2,
 		country: 'Республика Беларусь',
 		index: 220123,
@@ -21,7 +21,7 @@ const branches: Record<string, Branch> = {
 		email: 'main@bioline.ru',
 		map: [27.56265, 53.92365],
 	},
-	msk: {
+	'msk': {
 		id: 3,
 		country: 'Россия',
 		index: 127055,
@@ -31,7 +31,7 @@ const branches: Record<string, Branch> = {
 		email: 'main@bioline.ru',
 		map: [37.589, 55.7888],
 	},
-	novosibirsk: {
+	'novosibirsk': {
 		id: 4,
 		country: 'Россия',
 		index: 630099,
@@ -41,7 +41,7 @@ const branches: Record<string, Branch> = {
 		email: 'main@bioline.ru',
 		map: [82.914, 55.0316],
 	},
-	nn: {
+	'nn': {
 		id: 5,
 		country: 'Россия',
 		index: 603057,
