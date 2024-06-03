@@ -193,8 +193,6 @@ const onSubmit = form.handleSubmit(async (values) => {
   }
 });
 
-const isImageLoaded = ref(false);
-
 function scrollToMap() {
   const location = document.querySelector('.map');
   window.scrollTo({
@@ -230,10 +228,8 @@ function scrollToMap() {
                       <CardContent class="flex aspect-square items-center justify-center p-1">
                         <NuxtPicture
                           v-if="image.type === 'image'"
-                          class="flex w-full items-center justify-center opacity-0 transition-opacity"
-                          :class="{'opacity-100': isImageLoaded}"
+                          class="flex w-full items-center justify-center transition-opacity"
                           preload
-                          @load="isImageLoaded = true"
                           :img-attrs="{class:`w-full object-scale-down`}"
                           :src="image.link"/>
                         <div
@@ -283,18 +279,14 @@ function scrollToMap() {
                       <CardContent class="relative flex aspect-square items-center justify-center p-0">
                         <NuxtPicture
                           v-if="image.type === 'image'"
-                          class="flex h-full w-full items-center justify-center opacity-0 transition-opacity"
-                          :class="{'opacity-100': isImageLoaded}"
+                          class="flex h-full w-full items-center justify-center transition-opacity"
                           preload
-                          @load="isImageLoaded = true"
                           :img-attrs="{class:`w-full h-full object-scale-down`}"
                           :src="image.link"/>
                         <NuxtPicture
                           v-else
-                          class="flex h-full w-full items-center justify-center opacity-0 transition-opacity"
-                          :class="{'opacity-100': isImageLoaded}"
+                          class="flex h-full w-full items-center justify-center transition-opacity"
                           preload
-                          @load="isImageLoaded = true"
                           :img-attrs="{class:`w-full h-full object-cover`}"
                           :src="image.cover"/>
                         <Icon
@@ -582,10 +574,8 @@ function scrollToMap() {
                   <CardContent class="flex items-center justify-center aspect-auto h-full p-0">
                     <NuxtPicture
                       v-if="image.type === 'image'"
-                      class="flex w-full h-full items-center justify-center opacity-0 transition-opacity"
-                      :class="{'opacity-100': isImageLoaded}"
+                      class="flex w-full h-full items-center justify-center transition-opacity"
                       preload
-                      @load="isImageLoaded = true"
                       :img-attrs="{class:`w-full h-full object-scale-down`}"
                       :src="image.link"/>
                     <div
@@ -625,18 +615,14 @@ function scrollToMap() {
                   <CardContent class="relative flex aspect-square items-center justify-center p-0">
                     <NuxtPicture
                       v-if="image.type === 'image'"
-                      class="flex h-full w-full items-center justify-center opacity-0 transition-opacity"
-                      :class="{'opacity-100': isImageLoaded}"
+                      class="flex h-full w-full items-center justify-center transition-opacity"
                       preload
-                      @load="isImageLoaded = true"
                       :img-attrs="{class:`w-full h-full object-scale-down`}"
                       :src="image.link"/>
                     <NuxtPicture
                       v-else
-                      class="flex h-full w-full items-center justify-center opacity-0 transition-opacity"
-                      :class="{'opacity-100': isImageLoaded}"
+                      class="flex h-full w-full items-center justify-center transition-opacity"
                       preload
-                      @load="isImageLoaded = true"
                       :img-attrs="{class:`w-full h-full object-scale-down`}"
                       :src="image.cover"/>
                     <Icon
