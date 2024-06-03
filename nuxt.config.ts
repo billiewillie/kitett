@@ -80,8 +80,14 @@ export default defineNuxtConfig({
 	},
 	app: {
 		head: {
+			htmlAttrs: {
+				lang: 'ru'
+			},
 			meta: [
-				{name: 'robots', content: 'noindex, nofollow'},
+				{
+					name: 'robots',
+					content: 'noindex, nofollow'
+				},
 			]
 		}
 	}
