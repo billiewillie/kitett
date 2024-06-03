@@ -62,6 +62,7 @@ const onSubmit = form.handleSubmit((values) => {
     form.resetForm();
     toast({
       description: 'Заявка отправлена!',
+      variant: 'success',
     });
   }, 500);
 });
