@@ -5,11 +5,11 @@ import { useHead, useSeoMeta } from 'unhead';
 useSeoMeta({
   ogTitle: 'Молокоотсосы и аксессуары Kitett',
   ogDescription: 'Товары для грудного вскармливания Kitett - все для мамы и малыша',
-  ogImage: '../../../img/ogimage.jpg',
+  ogImage: '/img/ogimage.jpg',
   ogUrl: 'https://kitett.com/',
   twitterTitle: 'Страница не найдена - Kitett',
   twitterDescription: 'Товары для грудного вскармливания Kitett - все для мамы и малыша',
-  twitterImage: '../../../img/ogimage.jpg',
+  twitterImage: '/img/ogimage.jpg',
   twitterCard: 'summary',
 });
 

@@ -24,11 +24,11 @@ if (!category.value) {
 useSeoMeta({
   ogTitle: `${category.value?.title} Kitett`,
   ogDescription: `${category.value?.description} Kitett`,
-  ogImage: '../../../img/ogimage.jpg',
+  ogImage: '/img/ogimage.jpg',
   ogUrl: 'https://kitett.com/',
   twitterTitle: `${category.value?.title} Kitett`,
   twitterDescription: `${category.value?.description} Kitett`,
-  twitterImage: '../../../img/ogimage.jpg',
+  twitterImage: '/img/ogimage.jpg',
   twitterCard: 'summary',
 });
 
@@ -48,7 +48,6 @@ useHead({
 </script>
 
 <template>
-  <div></div>
   <CategoryPageLayout
     v-if="category?.productList.length>0"
     :category="category"

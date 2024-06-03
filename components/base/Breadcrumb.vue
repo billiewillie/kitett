@@ -10,7 +10,6 @@ defineProps<{ links: BreadcrumbProp[] }>()
 </script>
 
 <template>
-  <div></div>
   <Breadcrumb class="hidden xl:flex mb-[24px]">
     <BreadcrumbList>
       <template

@@ -7,11 +7,11 @@ import { useHead, useSeoMeta } from 'unhead';
 useSeoMeta({
   ogTitle: 'Купить молокоотсос Kitett',
   ogDescription: 'Купить молокоотсосы и аксессуары для грудного вскармливания Kitett в России',
-  ogImage: '../../../img/ogimage.jpg',
+  ogImage: '/img/ogimage.jpg',
   ogUrl: 'https://kitett.com/',
   twitterTitle: 'Купить молокоотсос Kitett',
   twitterDescription: 'Купить молокоотсосы и аксессуары для грудного вскармливания Kitett в России',
-  twitterImage: '../../../img/ogimage.jpg',
+  twitterImage: '/img/ogimage.jpg',
   twitterCard: 'summary',
 });
 
