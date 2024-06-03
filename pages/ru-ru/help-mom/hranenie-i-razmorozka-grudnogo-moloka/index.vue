@@ -12,7 +12,7 @@ useSeoMeta({
   twitterTitle: 'Хранение и разморозка грудногой молока - Kitett',
   twitterDescription: 'Ручные и электрические молокоотсосы Kitett, а также советы в помощь кормящей маме',
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

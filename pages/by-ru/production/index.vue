@@ -10,7 +10,7 @@ useSeoMeta({
   twitterTitle: 'Страница не найдена - Kitett',
   twitterDescription: 'Товары для грудного вскармливания Kitett - все для мамы и малыша',
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

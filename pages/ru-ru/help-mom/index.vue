@@ -12,7 +12,7 @@ useSeoMeta({
   twitterTitle: 'Советы специалиста по грудному вскармливанию',
   twitterDescription: 'Рекомендации для мам по поддержанию грудного вскармливания',
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

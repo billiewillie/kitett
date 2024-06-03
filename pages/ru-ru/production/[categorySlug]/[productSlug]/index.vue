@@ -38,7 +38,7 @@ useSeoMeta({
   twitterTitle: `${product.value?.fullTitle} Kitett`,
   twitterDescription: `${product.value?.description} Kitett`,
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

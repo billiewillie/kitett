@@ -12,7 +12,7 @@ useSeoMeta({
   twitterTitle: 'Купить молокоотсос Kitett',
   twitterDescription: 'Купить молокоотсосы и аксессуары для грудного вскармливания Kitett в России',
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

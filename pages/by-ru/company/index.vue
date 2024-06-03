@@ -10,7 +10,7 @@ useSeoMeta({
   twitterTitle: 'Kitett – более 60 лет помогает в грудном вскармливании',
   twitterDescription: 'Бренд Kitett - №1 по выпуску молокоотсосов во Франции',
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({

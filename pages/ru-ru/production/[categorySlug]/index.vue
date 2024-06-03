@@ -29,7 +29,7 @@ useSeoMeta({
   twitterTitle: `${category.value?.title} Kitett`,
   twitterDescription: `${category.value?.description} Kitett`,
   twitterImage: '/img/ogimage.jpg',
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 });
 
 useHead({
