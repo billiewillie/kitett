@@ -10,12 +10,12 @@ const location = useLocation();
 const breadcrumbs: Breadcrumb[] = [
   {
     id: 1,
-    title: 'главная',
+    title: 'Главная',
     link: `/${location.value.currentLocation}`,
   },
   {
     id: 2,
-    title: 'полезная информация',
+    title: 'Полезная информация',
   },
 ];
 </script>

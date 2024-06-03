@@ -16,16 +16,14 @@ const props = defineProps({
 const breadcrumbs: Breadcrumb[] = [
   {
     id: 1,
-    title: 'главная',
+    title: 'Главная',
     link: `/${location.value.currentLocation}`,
   },
   {
     id: 2,
-    title: 'продукция',
+    title: 'Продукция',
   },
 ];
-
-const isImageLoaded = ref(false);
 </script>
 
 <template>
