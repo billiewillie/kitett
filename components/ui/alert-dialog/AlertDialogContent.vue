@@ -1,7 +1,7 @@
 <script
   setup
   lang="ts">
-import { type HTMLAttributes, computed } from 'vue';
+import {type HTMLAttributes, computed} from 'vue';
 import {
   AlertDialogContent,
   type AlertDialogContentEmits,
@@ -10,14 +10,14 @@ import {
   AlertDialogPortal, DialogClose,
   useForwardPropsEmits,
 } from 'radix-vue';
-import { cn } from '@/lib/utils';
+import {cn} from '@/lib/utils';
 import {X} from "lucide-vue-next";
 
 const props = defineProps<AlertDialogContentProps & { class?: HTMLAttributes['class'] }>();
 const emits = defineEmits<AlertDialogContentEmits & { close: () => void }>();
 
 const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const {class: _, ...delegated} = props;
 
   return delegated;
 });
@@ -40,14 +40,14 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits);
         )
       "
     >
-      <slot />
+      <slot/>
 
-      <AlertDialogClose
+      <DialogClose
         @click="emits('close')"
         class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-        <X class="w-8 h-8" />
+        <X class="w-8 h-8"/>
         <span class="sr-only">Close</span>
-      </AlertDialogClose>
+      </DialogClose>
     </AlertDialogContent>
   </AlertDialogPortal>
 </template>

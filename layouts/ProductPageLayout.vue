@@ -527,19 +527,30 @@ function scrollToMap() {
         separator-style="top-[calc(50%-2px)] absolute"
         text-style="self-start pl-0 lg:pl-0"/>
       <iframe
+        v-if="location.currentLocation === 'ru-ru'"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c7e83f98252ffda2b2691789485d795d9b7f5d07b7f6c8b065f85981bfdbc94&amp;source=constructor"
         width="100%"
         class="rounded shadow-[0_2px_14px_0_rgba(0,0,0,0.15)] mb-16 h-[200px] xl:h-[450px]"></iframe>
+      <iframe
+        v-else
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d82afa861c51e356af762df6da3682fecc5b262a8a9a81f4985bab7d019bc96&amp;source=constructor"
+        width="100%"
+        class="rounded shadow-[0_2px_14px_0_rgba(0,0,0,0.15)] mb-16 h-[200px] xl:h-[450px]"></iframe>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-[72px]">
-        <div
+        <template
           v-for="item in props.product?.installed"
-          class="card"
-          :key="item">
-          <Separator class="hidden xl:block h-[5px] bg-separator-pattern mb-4"/>
-          <p class="font-bold">{{ item.title }}</p>
-          <br>
-          <p>{{ item.address }}</p>
-        </div>
+          :key="item"
+        >
+          <div
+            v-if="item?.country === location.currentLocation"
+            class="card"
+          >
+            <Separator class="hidden xl:block h-[5px] bg-separator-pattern mb-4"/>
+            <p class="font-bold">{{ item.title }}</p>
+            <br>
+            <p>{{ item.address }}</p>
+          </div>
+        </template>
       </div>
     </div>
   </section>

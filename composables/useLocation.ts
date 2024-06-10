@@ -12,7 +12,7 @@ export function useLocation(): ComputedRef<Location> {
 			return {
 				currentLocation: "ru-ru",
 				newLocationPath: "by-ru",
-				newLocationText: "Рос",
+				newLocationText: "РФ",
 				branch: branches.spb,
 				flag: FLAGS.ru.image
 			}
@@ -20,7 +20,7 @@ export function useLocation(): ComputedRef<Location> {
 			return {
 				currentLocation: "by-ru",
 				newLocationPath: "ru-ru",
-				newLocationText: "Бел",
+				newLocationText: "РБ",
 				branch: branches.minsk,
 				flag: FLAGS.by.image
 			}
