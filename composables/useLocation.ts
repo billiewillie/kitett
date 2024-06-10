@@ -2,7 +2,7 @@ import {computed, type ComputedRef} from "vue";
 import {useRoute} from "vue-router";
 import type {Location} from "~/types";
 import branches from "~/data/branches";
-import { FLAGS } from '~/data/constants';
+import {FLAGS} from '~/data/constants';
 
 export function useLocation(): ComputedRef<Location> {
 	const route = useRoute()
