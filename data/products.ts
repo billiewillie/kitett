@@ -102,7 +102,7 @@ const products = {
 						{
 							id: 3,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
@@ -257,7 +257,7 @@ const products = {
 						{
 							id: 1,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
@@ -446,7 +446,7 @@ const products = {
 						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -612,7 +612,7 @@ const products = {
 						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -701,7 +701,7 @@ const products = {
 						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -831,7 +831,7 @@ const products = {
 						{
 							id: 1,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -839,7 +839,7 @@ const products = {
 						'<p>Размеры воронок KOLOR отличаются по внутреннему диаметру (21-24-26-30 мм) и по полноте груди (S и L). Для определения нужного размера воронки воспользуйтесь:</p>' +
 						'<ul>' +
 						'<li><a href="https://koloryou.com/?lang=ru" target="_blank" class="decorated">мобильным приложением KOLORYOU</a></li>' +
-						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf" target="_blank" class="decorated">линейкой Колорама</a></li>' +
+						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf" target="_blank" class="decorated">линейкой KOLORAMA</a></li>' +
 						'</ul>' +
 						'<br>' +
 						'<h3 class="font-bold text-secondary">Удобство в использовании</h3>' +
@@ -966,7 +966,7 @@ const products = {
 						{
 							id: 1,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка Колорама',
+							title: 'Линейка KOLORAMA',
 						},
 						{
 							id: 2,
@@ -979,7 +979,7 @@ const products = {
 						'<p>Размеры воронок KOLOR отличаются по внутреннему диаметру (21-24-26-30 мм) и по полноте груди (S и L). Для определения нужного размера воронки воспользуйтесь:</p>' +
 						'<ul>' +
 						'<li><a href="https://koloryou.com/?lang=ru" target="_blank" class="decorated">мобильным приложением KOLORYOU</a></li>' +
-						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf" target="_blank" class="decorated">линейкой Колорама</a></li>' +
+						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf" target="_blank" class="decorated">линейкой KOLORAMA</a></li>' +
 						'</ul>' +
 						'<br>' +
 						'<h3 class="font-bold text-secondary">Контроль гигиены устройства</h3>' +
@@ -1246,3 +1246,4 @@ const products = {
 	],
 };
 export default products;
+``
