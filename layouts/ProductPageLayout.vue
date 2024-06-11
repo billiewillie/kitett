@@ -515,7 +515,7 @@ function scrollToMap() {
     </div>
   </section>
 
-  <AppAccessories/>
+  <AppAccessories :categoryId="props.category?.id"/>
 
   <section
     v-if="props.product?.installed.length > 0"

@@ -13,15 +13,16 @@ import {useLocation} from '~/composables/useLocation';
 import type {Branch, Breadcrumb} from '~/types';
 import branches from '~/data/branches';
 
+const location = useLocation();
+
 const map = shallowRef<null | YMap>(null);
 
-const coordinates = ref(branches.spb.map);
+const coordinates = ref(location.value.currentLocation === 'ru-ru' ? branches.spb.map : branches.minsk.map);
 
 const marker = ref({
   coordinates: coordinates.value,
 });
 
-const location = useLocation();
 
 const breadcrumbs: Breadcrumb[] = [
   {
@@ -60,14 +61,25 @@ function scrollToMap() {
         <div class="xl:order-2">
           <h2 class="text-[30px] font-medium">Центральный офис:</h2>
           <br>
-          <p>
+          <p v-if="location.currentLocation === 'ru-ru'">
             {{ branches.spb.index }}, {{ branches.spb.country }}, {{ branches.spb.city }},<br>{{ branches.spb.address }}
           </p>
+          <p v-else>
+            {{ branches.minsk.index }}, {{ branches.spb.country }}, {{
+              branches.minsk.city
+            }},<br>{{ branches.minsk.address }}
+          </p>
           <br>
-          <p>
+          <p v-if="location.currentLocation === 'ru-ru'">
             тел: 
             <NuxtLink :href="`tel:${branches.spb.phone}`">
               {{ branches.spb.phone }}
+            </NuxtLink>
+          </p>
+          <p v-else>
+            тел: 
+            <NuxtLink :href="`tel:${branches.minsk.phone}`">
+              {{ branches.minsk.phone }}
             </NuxtLink>
           </p>
           <p>e-mail: 
@@ -77,12 +89,20 @@ function scrollToMap() {
           </p>
           <br>
           <Button
+            v-if="location.currentLocation === 'ru-ru'"
             class="text-[18px]"
-            @click="setCoordinates(branches.spb.map);scrollToMap()">посмотреть на карте
+            @click="setCoordinates(branches.spb.map);scrollToMap()">
+            посмотреть на карте
+          </Button>
+          <Button
+            v-else
+            class="text-[18px]"
+            @click="setCoordinates(branches.minsk.map);scrollToMap()">
+            посмотреть на карте
           </Button>
         </div>
         <BaseImage
-          image="/img/contacts.jpg"
+          :image="location.currentLocation === 'ru-ru' ? '/img/contacts.jpg' : '/img/contacts-belarus.jpg'"
           img-class="object-cover w-full h-full"
           class="relative overflow-hidden top-0 w-full h-full bg-[#2363B6] col-span-2 rounded"/>
       </div>
@@ -117,7 +137,7 @@ function scrollToMap() {
     </div>
   </section>
 
-  <section class="mb-[75px]">
+  <section class="mb-[75px]" v-if="location.currentLocation === 'ru-ru'">
     <div class="container">
       <BaseTitle
         title="филиалы"
@@ -129,22 +149,7 @@ function scrollToMap() {
           v-for="(branch, key) in branches"
           :key="key">
           <li
-            v-if="key !== 'spb' && (location.currentLocation === 'by-ru' && key === 'minsk')"
-            class="card">
-            <h3 class="title text-[18px] font-bold">{{ branch.city }}</h3>
-            <br>
-            <address class="not-italic 2xl:min-h-[48px]">{{ branch.address }}</address>
-            <br>
-            <p>тел.: {{ branch.phone }}</p>
-            <br>
-            <Button
-              class="text-[18px]"
-              @click="setCoordinates(branch.map);scrollToMap()">
-              посмотреть на карте
-            </Button>
-          </li>
-          <li
-            v-if="key !== 'spb' && location.currentLocation === 'ru-ru'"
+            v-if="key !== 'spb'"
             class="card">
             <h3 class="title text-[18px] font-bold">{{ branch.city }}</h3>
             <br>

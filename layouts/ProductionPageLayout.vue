@@ -53,7 +53,7 @@ const breadcrumbs: Breadcrumb[] = [
               :src="category.img"/>
           </div>
 
-          <h3 class="text-2xl 2xl:text-3xl font-bold font-display md:min-h-[70px] xl:min-h-[70px] text-secondary mb-8">
+          <h3 class="text-xl 2xl:text-3xl font-bold font-display md:min-h-[70px] xl:min-h-[70px] text-secondary mb-8">
             {{ category.title }}
           </h3>
 

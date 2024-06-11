@@ -1,8 +1,13 @@
 <script
   setup
   lang="ts">
-import {ADDRESSES, COPYRIGHT, SOCIALS} from "@/data/constants";
 import {useLocation} from "~/composables/useLocation";
+
+const props = defineProps({
+  categoryId: {
+    type: Number,
+  },
+});
 
 const location = useLocation();
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
@@ -16,7 +21,15 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
   <section class="mb-[75px]">
     <div class="container">
       <BaseTitle
-        title="Необходимые расходные материалы"
+        v-if="props.categoryId === 1"
+        title="Расходные материалы"
+        tag="h2"
+        separator-style="top-[calc(50%-2px)] absolute"
+        text-style="self-start pl-0 lg:pl-0"/>
+
+      <BaseTitle
+        v-else
+        title="С этим товаром смотрят"
         tag="h2"
         separator-style="top-[calc(50%-2px)] absolute"
         text-style="self-start pl-0 lg:pl-0"/>
