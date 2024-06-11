@@ -18,18 +18,16 @@ defineProps<{ links: BreadcrumbProp[] }>()
         <template v-if="index !== links.length - 1">
           <BreadcrumbItem>
             <BreadcrumbLink as-child>
-              <RouterLink :to="`${link.link}`">
-                {{ link.title }}
-              </RouterLink>
+              <RouterLink
+                :to="`${link.link}`"
+                v-html="link.title"/>
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator/>
         </template>
         <template v-else>
           <BreadcrumbItem>
-            <BreadcrumbPage>
-              {{ link.title }}
-            </BreadcrumbPage>
+            <BreadcrumbPage :text="link.title"/>
           </BreadcrumbItem>
         </template>
       </template>

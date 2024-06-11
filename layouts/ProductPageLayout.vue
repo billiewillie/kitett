@@ -206,11 +206,12 @@ function scrollToMap() {
   <section class="first-screen mb-[75px]">
     <div class="container m-auto">
       <BaseBreadcrumb :links="breadcrumbs"/>
-      <BaseTitle
-        :title="props.product?.fullTitle"
-        tag="h1"
-        separator-style="top-[calc(50%-2px)] absolute"
-        text-style="self-start pl-0 lg:pl-0"/>
+      <div class="flex flex-col mb-[40px] items-center relative">
+        <h1
+          class="flex bg-background z-10 px-[16px] leading-none lg:px-[32px] font-bold text-[24px] lg:text-[46px] text-secondary font-display self-start pl-0 lg:pl-0"
+          v-html="props.product?.fullTitle"></h1>
+        <Separator class="top-[calc(50%-2px)] absolute h-[5px] bg-separator-pattern bg-repeat-space"/>
+      </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-[80px] lg:mb-[75px]">
         <div>
           <div class="flex flex-col xl:flex-row w-full gap-4">
@@ -309,9 +310,8 @@ function scrollToMap() {
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
           <p
             class="mb-[24px]"
-            v-if="props.product?.description && props.product.description.length > 0">
-            {{ props.product.description }}
-          </p>
+            v-if="props.product?.description && props.product.description.length > 0"
+            v-html="props.product.description"></p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div class="flex flex-col gap-[16px] xl:gap-[32px]">
               <div class="flex flex-col">
@@ -498,7 +498,9 @@ function scrollToMap() {
                   :href="instruction.link"
                   target="_blank">
                   <DocumentPDF/>
-                  <span class="flex-auto flex items-start">{{ instruction.title }}</span>
+                  <span
+                    class="flex-auto flex items-start"
+                    v-html="instruction.title"></span>
                   <Button class="uppercase">
                     скачать
                   </Button>

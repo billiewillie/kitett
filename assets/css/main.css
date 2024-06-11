@@ -113,3 +113,13 @@
     fill: currentColor;
   }
 }
+
+sup {
+  font-size: 0.6em;
+  top: -1em;
+}
+
+h1 sup,
+h2 sup {
+  top: 0;
+}

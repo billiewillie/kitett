@@ -37,12 +37,16 @@ const breadcrumbs: Breadcrumb[] = [
   <section class="first-screen mb-[75px]">
     <div class="container m-auto">
       <BaseBreadcrumb :links="breadcrumbs"/>
-      <BaseTitle
-        :title="props.category?.title"
-        tag="h1"
-        separator-style="top-[calc(50%-2px)] absolute"
-        text-style="text-center uppercase"/>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
+
+      <div class="flex flex-col mb-[40px] items-center relative">
+        <h1
+          class="text-center uppercase flex bg-background z-10 px-[16px] leading-normal lg:px-[32px] font-bold text-[24px] lg:text-[46px] text-secondary font-display"
+          v-html="props.category?.title">
+        </h1>
+        <Separator class="top-[calc(50%-2px)] absolute h-[5px] bg-separator-pattern bg-repeat-space"/>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
         <div
           v-for="product in props.products"
           :key="product.id"
@@ -54,9 +58,9 @@ const breadcrumbs: Breadcrumb[] = [
             class="flex justify-center items-center w-full md:h-[250px] xl:h-[300px] xl:px-4"
           />
 
-          <h3 class="text-2xl 2xl:text-3xl font-bold font-display md:min-h-[70px] xl:min-h-[70px] text-secondary mb-8">
-            {{ product.title }}
-          </h3>
+          <h3
+            class="text-xl font-bold font-display md:min-h-[70px] text-secondary mb-4"
+            v-html="product.title"></h3>
 
           <Button as-child>
             <NuxtLink

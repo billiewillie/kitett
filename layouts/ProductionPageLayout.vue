@@ -29,13 +29,13 @@ const breadcrumbs: Breadcrumb[] = [
 <template>
   <section class="first-screen mb-[72px] xl:mb-[100px]">
     <div class="container">
-      <BaseBreadcrumb :links="breadcrumbs" />
+      <BaseBreadcrumb :links="breadcrumbs"/>
 
       <BaseTitle
         title="продукция"
         tag="h1"
         separator-style="top-[calc(50%-2px)] absolute"
-        text-style="text-center uppercase" />
+        text-style="text-center uppercase"/>
 
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
         <div
@@ -53,11 +53,11 @@ const breadcrumbs: Breadcrumb[] = [
               :src="category.img"/>
           </div>
 
-          <h3 class="text-xl 2xl:text-3xl font-bold font-display md:min-h-[70px] xl:min-h-[70px] text-secondary mb-8">
-            {{ category.title }}
-          </h3>
+          <h3
+            class="text-xl 2xl:text-2xl font-bold font-display md:min-h-[70px] text-secondary"
+            v-html="category.title"></h3>
 
-          <Separator class="my-[24px] w-1/2 xl:w-full h-[5px] bg-separator-pattern"/>
+          <Separator class="my-4 w-1/2 xl:w-full h-[5px] bg-separator-pattern"/>
 
           <p class="md:min-h-[90px] xl:min-h-[90px] mb-[32px] text-base">
             {{ category.description }}

@@ -1,9 +1,12 @@
-<script lang="ts" setup>
-import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
+<script
+  lang="ts"
+  setup>
+import type {HTMLAttributes} from 'vue'
+import {cn} from '@/lib/utils'
 
 const props = defineProps<{
-  class?: HTMLAttributes['class']
+  class?: HTMLAttributes['class'],
+  text: string
 }>()
 </script>
 
@@ -13,7 +16,6 @@ const props = defineProps<{
     aria-disabled="true"
     aria-current="page"
     :class="cn('font-medium text-foreground', props.class)"
-  >
-    <slot />
-  </span>
+    v-html="text"
+  ></span>
 </template>

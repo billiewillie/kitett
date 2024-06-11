@@ -48,7 +48,7 @@ const links = [
 </script>
 
 <template>
-  <div class="hidden 2xl:block items-center gap-[16px] uppercase">
+  <div class="hidden 2xl:flex items-center gap-4 uppercase">
 
     <DropdownMenu>
       <DropdownMenuTrigger as-child>
@@ -56,8 +56,7 @@ const links = [
           :id="dropdownId"
           :variant="isRouteActive('production', route) ? 'default' : 'ghost'"
           class="uppercase navigation-link"
-          :class="isRouteActive('production', route) ? '' : 'text-secondary'"
-        >
+          :class="isRouteActive('production', route) ? '' : 'text-secondary'">
           продукция
           <ChevronDown class="w-4 h-4 mr-0"/>
         </Button>
@@ -69,7 +68,7 @@ const links = [
             :key="category.slug">
             <DropdownMenuSub v-if="category.productList.length">
               <DropdownMenuSubTrigger>
-                <span>{{ category.title }}</span>
+                <span v-html="category.title"></span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
@@ -79,8 +78,8 @@ const links = [
                     <DropdownMenuItem>
                       <NuxtLink
                         class="w-full"
-                        :to="`/${location.currentLocation}/production/${category.slug}/${product.slug}`">
-                        {{ product.title }}
+                        :to="`/${location.currentLocation}/production/${category.slug}/${product.slug}`"
+                        v-html="product.title">
                       </NuxtLink>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator
@@ -93,9 +92,8 @@ const links = [
             <DropdownMenuItem v-else>
               <NuxtLink
                 class="w-full"
-                :to="`/${location.currentLocation}/production/${category.slug}`">
-                {{ category.title }}
-              </NuxtLink>
+                :to="`/${location.currentLocation}/production/${category.slug}`"
+                v-html="category.title"/>
             </DropdownMenuItem>
             <DropdownMenuSeparator
               v-if="index !== products.categories.length - 1"

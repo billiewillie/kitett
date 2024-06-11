@@ -395,7 +395,7 @@ const breadcrumbs: Breadcrumb[] = [
             name="lets-icons:check-ring-light"
             size="42"
             color="#e4076d"/>
-          <p>{{ statement.text }}</p>
+          <p v-html="statement.text"></p>
         </li>
       </ul>
       <Separator class="bg-separator-pattern h-[5px] my-6"/>

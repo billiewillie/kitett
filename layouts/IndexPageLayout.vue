@@ -62,10 +62,10 @@ import {VisuallyHidden} from 'radix-vue';
             :image="category.img"
             img-class="object-scale-down h-full w-full"
             class="flex justify-center items-center w-full md:h-[250px] xl:h-[300px] xl:px-4"/>
-          <h3 class="text-2xl 2xl:text-3xl font-bold font-display md:min-h-[72px] text-secondary xl:px-4">
-            {{ category.title }}
-          </h3>
-          <Separator class="my-[24px] w-1/2 xl:w-full h-[5px] bg-separator-pattern"/>
+          <h3
+            class="text-2xl font-bold font-display md:min-h-[70px] text-secondary xl:px-4"
+            v-html="category.title"></h3>
+          <Separator class="my-4 w-1/2 xl:w-full h-[5px] bg-separator-pattern"/>
           <p class="md:min-h-[90px] mb-[32px] text-base xl:px-4">
             {{ category.description }}
           </p>

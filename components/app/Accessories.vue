@@ -10,8 +10,8 @@ const props = defineProps({
 });
 
 const location = useLocation();
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
-import { Card, CardContent } from '~/components/ui/card';
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from '~/components/ui/carousel';
+import {Card, CardContent} from '~/components/ui/card';
 import products from '~/data/products';
 
 const accessories = products.categories.find(el => el.id === 3)?.productList;
@@ -51,10 +51,11 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
                 <CardContent class="flex flex-col gap-y-4 items-center justify-between p-6 h-full aspect-auto">
                   <NuxtPicture
                     :src="accessory.cover"
-                    :img-attrs="{class: 'object-scale-down flex w-full h-full'}"
-                    class="w-[90%] max-h-[220px] flex xl:min-h-[156px]"/>
-                  <h4 class="text-2xl font-bold font-display text-secondary text-center md:min-h-[64px]">
-                    {{ accessory.title }}</h4>
+                    :img-attrs="{class: 'flex w-full h-full object-scale-down'}"
+                    class="w-full flex"/>
+                  <h4
+                    class="text-xl font-bold font-display text-secondary text-center"
+                    v-html="accessory.title"></h4>
                   <Button as-child>
                     <NuxtLink
                       class="text-[18px] uppercase"
