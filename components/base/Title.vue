@@ -2,7 +2,7 @@
   setup
   lang="ts">
 defineProps<{
-  title: string,
+  title?: string,
   tag: string,
   textStyle: string,
   separatorStyle: string,

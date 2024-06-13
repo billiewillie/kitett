@@ -130,8 +130,8 @@ const products = {
 				{
 					id: 12,
 					slug: 'fisio-pro',
-					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup>PRO</span>',
-					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup>PRO</span>',
+					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup> PRO</span>',
+					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup> PRO</span>',
 					description: 'Mолокоотсос Kitett FISIO<sup>®</sup>PRO предназначен для использования только в медицинских учреждениях. Помогает становлению и поддержанию необходимого уровня лактации.',
 					country: 'Франция',
 					material: 'Не содержит бисфенол-А',

@@ -38,7 +38,8 @@ const breadcrumbs: Breadcrumb[] = [
         text-style="text-center uppercase"/>
 
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
-        <div
+        <NuxtLink
+          :to="`/${location.currentLocation}/production/${category.slug}`"
           v-for="category in props.products?.categories"
           :key="category.id"
           class="group flex flex-col items-center text-center w-full card">
@@ -63,14 +64,10 @@ const breadcrumbs: Breadcrumb[] = [
             {{ category.description }}
           </p>
 
-          <Button as-child>
-            <NuxtLink
-              :to="`/${location.currentLocation}/production/${category.slug}`"
-              class="text-[18px] uppercase">
-              подробнее
-            </NuxtLink>
+          <Button class="text-[18px] uppercase">
+            открыть
           </Button>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </section>

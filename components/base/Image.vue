@@ -21,7 +21,6 @@ const isImageLoaded = ref(false);
     <NuxtPicture
       class="flex h-full w-full items-center justify-center opacity-0 transition-opacity"
       :class="{'opacity-100': isImageLoaded}"
-      preload
       :img-attrs="{class:`${imgClass}`}"
       @load="isImageLoaded = true"
       :src="image"/>

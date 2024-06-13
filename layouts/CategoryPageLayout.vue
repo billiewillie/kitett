@@ -28,7 +28,7 @@ const breadcrumbs: Breadcrumb[] = [
   },
   {
     id: 3,
-    title: props.category.title,
+    title: props.category?.title,
   },
 ];
 </script>
@@ -47,7 +47,8 @@ const breadcrumbs: Breadcrumb[] = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
-        <div
+        <NuxtLink
+          :to="`/ru-ru/production/${props.category?.slug}/${product.slug}`"
           v-for="product in props.products"
           :key="product.id"
           class="flex flex-col items-center text-center w-full card">
@@ -62,14 +63,10 @@ const breadcrumbs: Breadcrumb[] = [
             class="text-xl font-bold font-display md:min-h-[70px] text-secondary mb-4"
             v-html="product.title"></h3>
 
-          <Button as-child>
-            <NuxtLink
-              :to="`/ru-ru/production/${props.category.slug}/${product.slug}`"
-              class="text-[18px] uppercase">
+          <Button class="text-[18px] uppercase">
               открыть
-            </NuxtLink>
           </Button>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </section>

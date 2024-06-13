@@ -75,7 +75,7 @@ const links = [
                   <template
                     v-for="(product, index) in category.productList"
                     :key="product.id">
-                    <DropdownMenuItem>
+                    <DropdownMenuItem class="dropdown-menu-item">
                       <NuxtLink
                         class="w-full"
                         :to="`/${location.currentLocation}/production/${category.slug}/${product.slug}`"
@@ -116,3 +116,9 @@ const links = [
     </Button>
   </div>
 </template>
+
+<style>
+.dropdown-menu-item:hover span{
+  @apply text-background
+}
+</style>

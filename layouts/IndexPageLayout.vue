@@ -10,16 +10,21 @@ import {
 } from '~/components/ui/carousel';
 import {Card, CardContent} from '~/components/ui/card';
 import {VisuallyHidden} from 'radix-vue';
+import {useLocation} from "~/composables/useLocation";
+
+const location = useLocation();
 </script>
 
 <template>
   <!--  first screen-->
   <section class="relative flex-col xl:flex-row mb-[75px] xl:pt-[72px] xl:pb-[216px]">
     <div class="relative xl:absolute order-1 mb-[32px] xl:mb-0 top-0 xl:left-1/2 w-full xl:w-1/2 min-h-[299px] md:min-h-[670px] xl:min-h-0 md:h-full">
-      <BaseImage
-        image="/img/first-screen.jpg"
-        img-class="object-cover object-top w-full h-full flex"
-        class="xl:rounded-tl-[350px] bg-[#9CA1A2] h-full z-10 relative"/>
+      <div class="overflow-hidden xl:rounded-tl-[350px] bg-[#9CA1A2] h-full">
+        <NuxtPicture
+          class="flex w-full items-center justify-center transition-opacity z-10 relative"
+          :img-attrs="{class:'object-cover object-top w-full h-full flex'}"
+          src="/img/first-screen.jpg"/>
+      </div>
       <div class="absolute left-[65%] top-[75%] md:top-[85%] md:left-[75%] xl:top-[32px] xl:-left-[32px] w-[120px] h-[120px] xl:w-[200px] xl:h-[200px]">
         <div class="round-1 absolute w-[28px] h-[28px] rounded-full left-0 top-0 bg-notice"></div>
         <NuxtImg
@@ -51,17 +56,23 @@ import {VisuallyHidden} from 'radix-vue';
         separator-style="top-[calc(50%-2px)] absolute"
         text-style="text-center uppercase"/>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 md:flex-row md:flex-wrap xl:flex-wrap-reverse w-full gap-8 xl:gap-[72px]">
-        <div
+        <NuxtLink
           v-for="category in products.categories"
           :key="category.id"
+          :to="`/${location.currentLocation}/production/${category.slug}`"
           class="group flex flex-col items-center text-center w-full md:py-4 xl:px-0 card">
           <Icon
             name="cil:layers"
             class="absolute top-4 xl:top-0 right-4 xl:right-0 w-[32px] h-[32px] text-[#cfcfcf] group-hover:text-primary transition"/>
-          <BaseImage
-            :image="category.img"
-            img-class="object-scale-down h-full w-full"
-            class="flex justify-center items-center w-full md:h-[250px] xl:h-[300px] xl:px-4"/>
+
+          <div class="w-full rounded overflow-hidden h-full">
+            <NuxtPicture
+              loading="lazy"
+              class="flex justify-center items-center w-full md:h-[250px] xl:h-[300px] xl:px-4"
+              :img-attrs="{class:'object-scale-down object-center w-full h-full flex'}"
+              :src="category.img"/>
+          </div>
+
           <h3
             class="text-2xl font-bold font-display md:min-h-[70px] text-secondary xl:px-4"
             v-html="category.title"></h3>
@@ -69,14 +80,10 @@ import {VisuallyHidden} from 'radix-vue';
           <p class="md:min-h-[90px] mb-[32px] text-base xl:px-4">
             {{ category.description }}
           </p>
-          <Button as-child>
-            <NuxtLink
-              :to="`/ru-ru/production/${category.slug}`"
-              class="text-[18px] uppercase">
-              открыть
-            </NuxtLink>
+          <Button class="text-[18px] uppercase">
+            открыть
           </Button>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -131,11 +138,13 @@ import {VisuallyHidden} from 'radix-vue';
               <Card class="group h-full py-12 lg:border-background lg:shadow-none lg:hover:shadow-md lg:hover:border-accent transition-all">
                 <CardContent class="flex flex-col gap-y-12 items-center justify-center aspect-auto h-full">
 
-                  <BaseImage
-                    :image="video.cover"
-                    img-class="w-full h-full object-cover"
-                    class="w-full rounded overflow-hidden h-full"
-                  />
+                  <div class="w-full rounded overflow-hidden h-full">
+                    <NuxtPicture
+                      loading="lazy"
+                      class="flex w-full items-center justify-center transition-opacity z-10 relative h-full object-cover"
+                      :img-attrs="{class:'object-cover object-top w-full h-full flex'}"
+                      :src="video.cover"/>
+                  </div>
 
                   <h3 class="text-xl font-display text-gray uppercase">
                     {{ video.title }}
@@ -184,11 +193,13 @@ import {VisuallyHidden} from 'radix-vue';
         <BaseForm/>
       </div>
     </div>
-    <BaseImage
-      image="/img/index-contacts-bg.jpg"
-      class="hidden xl:flex absolute overflow-hidden top-0 left-1/2 w-1/2 h-full rounded-tl-[300px] bg-[#9CA1A2]"
-      img-class="object-cover w-full h-full"
-    />
+    <div class="hidden xl:flex absolute overflow-hidden top-0 left-1/2 w-1/2 h-full rounded-tl-[300px] bg-[#9CA1A2]">
+      <NuxtPicture
+        loading="lazy"
+        class="flex w-full items-center justify-center transition-opacity z-10 relative"
+        :img-attrs="{class:'object-cover object-top w-full h-full flex'}"
+        src="/img/index-contacts-bg.jpg"/>
+    </div>
   </section>
 </template>
 
