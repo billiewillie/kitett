@@ -10,8 +10,8 @@ const products = {
 				{
 					id: 11,
 					slug: 'fisio',
-					title: 'Клинический молокоотсос FISIO<sup>®</sup>',
-					fullTitle: 'Клинический электрический молокоотсос FISIO<sup>®</sup>',
+					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup></span>',
+					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup></span>',
 					description: 'Молокоотсос Kitett FISIO<sup>®</sup> предназначен для использования в медицинских учреждениях. Благодаря легкости в настройке может быть использован мамой самостоятельно.',
 					country: 'Франция',
 					material: 'Не содержит бисфенол-А',
@@ -130,9 +130,9 @@ const products = {
 				{
 					id: 12,
 					slug: 'fisio-pro',
-					title: 'Клинический молокоотсос FISIO<sup>®</sup> PRO',
-					fullTitle: 'Клинический электрический молокоотсос FISIO<sup>®</sup> PRO',
-					description: 'Mолокоотсос Kitett FISIO<sup>®</sup> PRO предназначен для использования только в медицинских учреждениях. Помогает становлению и поддержанию необходимого уровня лактации.',
+					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup>PRO</span>',
+					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup>PRO</span>',
+					description: 'Mолокоотсос Kitett FISIO<sup>®</sup>PRO предназначен для использования только в медицинских учреждениях. Помогает становлению и поддержанию необходимого уровня лактации.',
 					country: 'Франция',
 					material: 'Не содержит бисфенол-А',
 					size: [
@@ -294,8 +294,8 @@ const products = {
 				{
 					id: 21,
 					slug: 'kolor-play',
-					title: 'Ручной молокоотсос KOLOR PLAY<sup>®</sup>',
-					fullTitle: 'Ручной молокоотсос KOLOR PLAY<sup>®</sup>',
+					title: 'Ручной молокоотсос <span class="text-primary">KOLOR PLAY<sup>®</sup></span>',
+					fullTitle: 'Ручной молокоотсос <span class="text-primary">KOLOR PLAY<sup>®</sup></span>',
 					description: 'Молокоотсос Kitett KOLOR PLAY<sup>®</sup> - это легкий и компактный ручной молокоотсос, простой в сборке и эксплуатации. Идеально подходит для эпизодических сцеживаний, незаменим во время длительных прогулок и путешествий.',
 					country: 'Франция',
 					material: 'Не содержит бисфенол-А',
@@ -315,14 +315,13 @@ const products = {
 					},
 					installed: [],
 					set: '<ul>' +
-						'<li>Воронка KOLOR, размер 24L (1 шт.), размеры на выбор: 21S, 24L, 26L или 30L.\n' +
-						'Если необходима воронка другого размера, ее можно заказать дополнительно</li>' +
 						'<li>Вакуумный модуль KOLOR<sup>®</sup> CLIP (1 шт.)</li>' +
 						'<li>Клапан «Clean Valve» (1 шт.)</li>' +
 						'<li>Контейнер для сбора и хранения грудного молока, 100 мл (1 шт.)</li>' +
 						'<li>Крышка контейнера для хранения грудного молока (1 шт.)</li>' +
 						'<li>Подставка под контейнер (1 шт.)</li>' +
 						'<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
+						'<li>Воронка KOLOR (1 шт.)</li>' +
 						'</ul>',
 					cover: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
 					gallery: [
@@ -464,8 +463,8 @@ const products = {
 				{
 					id: 22,
 					slug: 'minikit-solo',
-					title: 'Электрический молокоотсос MINIKIT SOLO<sup>®</sup>',
-					fullTitle: 'Электрический молокоотсос MINIKIT SOLO<sup>®</sup>',
+					title: 'Электрический молокоотсос <span class="text-primary">MINIKIT SOLO<sup>®</sup></span>',
+					fullTitle: 'Электрический молокоотсос <span class="text-primary">MINIKIT SOLO<sup>®</sup></span>',
 					description: 'Молокоотсос Kitett MINIKIT SOLO<sup>®</sup> — это портативный электрический молокоотсос, созданный для мам, ведущих активный образ жизни. Идеально подходит для частого и продолжительного применения дома и на работе.',
 					country: 'Франция',
 					material: 'Не содержит бисфенол-А',
@@ -495,6 +494,7 @@ const products = {
 						'<li>2 запасные диафрагмы белого цвета для клапана «Clean Valve»</li>' +
 						'<li>Сетевой адаптер (1 шт.)</li>' +
 						'<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
+						'<li>Воронка KOLOR (1 шт.)</li>' +
 						'</ul>',
 					cover: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
 					gallery: [
@@ -632,8 +632,8 @@ const products = {
 				{
 					id: 23,
 					slug: 'minikit-duo',
-					title: 'Электрический молокоотсос двойного сцеживания MINIKIT DUO<sup>®</sup>',
-					fullTitle: 'Двойной электрический молокоотсос MINIKIT DUO<sup>®</sup>',
+					title: 'Электрический молокоотсос двойного сцеживания <span class="text-primary">MINIKIT DUO<sup>®</sup></span>',
+					fullTitle: 'Двойной электрический молокоотсос <span class="text-primary">MINIKIT DUO<sup>®</sup></span>',
 					description: 'Молокоотсос Kitett MINIKIT DUO<sup>®</sup> — это портативный электрический молокоотсос двойного сцеживания. Идеален для стимуляции лактации, обеспечивает увеличение количества и улучшение качества молока.',
 					country: 'Франция',
 					material: 'Полипропилен, термопластичес-кий эластомер, поливинилхлорид',
@@ -666,6 +666,8 @@ const products = {
 						'<li>2 запасные диафрагмы для клапана «Clean Valve»</li>' +
 						'<li>Сетевой адаптер (1 шт.)</li>' +
 						'<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
+						'<li>Воронка KOLOR (2 шт.)</li>' +
+
 						'</ul>',
 					cover: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
 					gallery: [
@@ -729,15 +731,15 @@ const products = {
 		{
 			id: 3,
 			slug: 'aksessuary',
-			title: 'Аксессуары KITETT<sup>®</sup>',
+			title: 'Аксессуары',
 			description: 'для сцеживания, хранения и транспортировки грудного молока, а также ухода за грудью',
 			img: '/img/products/aksessuary/aksessuary.jpg',
 			productList: [
 				{
 					id: 31,
 					slug: 'voronki-kolor',
-					title: 'Воронки KOLOR<sup>®</sup>',
-					fullTitle: 'Воронки для сцеживания KOLOR<sup>®</sup>',
+					title: 'Воронки <span class="text-primary">KOLOR<sup>®</sup></span>',
+					fullTitle: 'Воронки для сцеживания <span class="text-primary">KOLOR<sup>®</sup></span>',
 					description: 'Идеально подобранная воронка сделает сцеживание комфортным и продуктивным, а также исключит любое травмирование нежной и чувствительной кожи груди.',
 					country: 'Франция',
 					material: 'Не содержит бисфенола-А и фталатов',
@@ -852,8 +854,8 @@ const products = {
 				{
 					id: 32,
 					slug: 'nabor-kolor',
-					title: 'Набор для сцеживания KOLOR<sup>®</sup>',
-					fullTitle: 'Набор для сцеживания KOLOR<sup>®</sup>',
+					title: 'Набор для сцеживания <span class="text-primary">KOLOR<sup>®</sup></span>',
+					fullTitle: 'Набор для сцеживания <span class="text-primary">KOLOR<sup>®</sup></span>',
 					description: 'Набор для сцеживания KOLOR для клинических молокотсосов FISIO<sup>®</sup> и FISIO<sup>®</sup> PRO предназначен к использованию в медицинских учреждениях. После выписки он может использоваться дома с бытовыми молокоотсосами KOLOR PLAY<sup>®</sup> и MINIKIT SOLO<sup>®</sup>.',
 					country: 'Франция',
 					material: 'Воронки KOLOR<sup>®</sup> не содержат бисфенола-А и фталатов',
@@ -876,7 +878,7 @@ const products = {
 					installed: [],
 					set:
 						'<ul>' +
-						'<li>Воронка KOLOR<sup>®</sup> (1 шт.) / Воронка KOLOR  автоклавируемая (1 шт.)</li>' +
+						'<li>В зависимости от модели молокоотсоса: с одной воронкой, с двумя, с одной автоклавируемой воронкой (для медицинских учреждений).</li>' +
 						'<li>Контейнер для сбора и хранения грудного молока, 100 мл (1 шт.)</li>' +
 						'<li>Крышка контейнера для хранения грудного молока (1 шт.)</li>' +
 						'<li>Соединительная трубка (1 шт.)</li>' +
@@ -988,9 +990,9 @@ const products = {
 				{
 					id: 33,
 					slug: 'fisio-bib',
-					title: 'Контейнеры для грудного молока FISIO<sup>®</sup> BIB',
-					fullTitle: 'Контейнеры для грудного молока FISIO<sup>®</sup> BIB',
-					description: 'Грудное молоко – бесценный продукт, который требует правильного и безопасного хранения. Контейнеры для сбора и хранения грудного молока FISIO<sup>®</sup> BIB сохраняют все полезные свойства молока, которые так важны для вашего малыша.',
+					title: 'Контейнеры для грудного молока <span class="text-primary">FISIO<sup>®</sup>BIB</span>',
+					fullTitle: 'Контейнеры для грудного молока <span class="text-primary">FISIO<sup>®</sup>BIB</span>',
+					description: 'Грудное молоко – бесценный продукт, который требует правильного и безопасного хранения. Контейнеры для сбора и хранения грудного молока FISIO<sup>®</sup>BIB сохраняют все полезные свойства молока, которые так важны для вашего малыша.',
 					country: 'Франция',
 					material: 'Не содержит бисфенола-А и фталатов',
 					size: [
@@ -1046,13 +1048,13 @@ const products = {
 						'<h3 class="font-bold text-secondary">Простой уход</h3>' +
 						'<p>Контейнеры можно мыть в посудомоечной машине, хранить в холодильной и морозильной камерах.</p>' +
 						'<h3 class="font-bold text-secondary">Безопасные материалы</h3>' +
-						'<p>Контейнеры для сбора и хранения грудного молока FISIO<sup>®</sup> BIB совместимы со всеми молокоотсосами Kitett: с ручным KOLOR PLAY, с электрическими MINIKIT SOLO<sup>®</sup>, FISIO<sup>®</sup> и FISIO<sup>®</sup>  PRO.</p>',
+						'<p>Контейнеры для сбора и хранения грудного молока FISIO<sup>®</sup>BIB совместимы со всеми молокоотсосами Kitett: с ручным KOLOR PLAY, с электрическими MINIKIT SOLO<sup>®</sup>, FISIO<sup>®</sup> и FISIO<sup>®</sup>  PRO.</p>',
 				},
 				{
 					id: 34,
 					slug: 'fisio-fresh',
-					title: 'Набор FISIO<sup>®</sup> FRESH для охлаждения и транспортировки грудного молока',
-					fullTitle: 'Набор FISIO<sup>®</sup> FRESH для охлаждения и транспортировки грудного молока',
+					title: 'Набор <span class="text-primary">FISIO<sup>®</sup>FRESH</span> для охлаждения и транспортировки грудного молока',
+					fullTitle: 'Набор <span class="text-primary">FISIO<sup>®</sup>FRESH</span> для охлаждения и транспортировки грудного молока',
 					description: 'В состав набора FISIO<sup>®</sup> FRESH входят аккумуляторы холода, контейнеры для сбора и хранения грудного молока и термосумка. Контейнеры вместе с аккумуляторами холода легко помещаются в компактную термосумку. Благодаря надежной упаковке, транспортировка грудного молока пройдет безопасно, а время охлаждения и хранения будет продлено.',
 					country: 'Франция',
 					material: 'В составе набора для хранения и транспортировки материал корпуса из ABS-пластика, не содержит бисфенола-А и фталатов',
@@ -1072,7 +1074,7 @@ const products = {
 					set:
 						'<ul>' +
 						'<li>Термосумка (1 шт.)</li>' +
-						'<li>Контейнеры FISIO BIB для сбора и хранения грудного молока, 100 мл c крышкой (4 шт.)</li>' +
+						'<li>Контейнеры FISIO<sup>®</sup>BIB для сбора и хранения грудного молока, 100 мл c крышкой (4 шт.)</li>' +
 						'<li>Аккумуляторы холода FISIO COOL (4 шт.)</li>' +
 						'<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
 						'</ul>',
@@ -1119,8 +1121,8 @@ const products = {
 				{
 					id: 35,
 					slug: 'fisio-lan',
-					title: 'Крем FISIO<sup>®</sup> LAN',
-					fullTitle: 'Крем для груди FISIO<sup>®</sup> LAN',
+					title: 'Крем <span class="text-primary">FISIO<sup>®</sup>LAN</span>',
+					fullTitle: 'Крем для груди <span class="text-primary">FISIO<sup>®</sup>LAN</span>',
 					description: 'Во время кормления грудью чувствительность сосков повышается, возможны болезненные ощущения - воспаление или возникновение трещин. С помощью Kitett Вы сможете начать заботиться о нежной коже груди еще до рождения малыша и продолжать уход весь период грудного вскармливания, чтобы предотвратить возможные неприятные ощущения.',
 					country: 'Франция',
 					material: 'В составе крема 100% ланолин',
@@ -1180,8 +1182,8 @@ const products = {
 				{
 					id: 36,
 					slug: 'fisio-pad',
-					title: 'Прокладки FISIO<sup>®</sup> PAD',
-					fullTitle: 'Лактационные одноразовые прокладки для груди FISIO<sup>®</sup> PAD',
+					title: 'Прокладки <span class="text-primary">FISIO<sup>®</sup>PAD</span>',
+					fullTitle: 'Лактационные одноразовые прокладки для груди <span class="text-primary">FISIO<sup>®</sup>PAD</span>',
 					description: 'Незаметная, нежная и деликатная защита от подтекания молока из груди',
 					country: 'Франция',
 					material: 'нетканный полипропилен, полиэтилен, расплющенная целлюлоза, адсорбент – полиакрилат натрия.',

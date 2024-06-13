@@ -33,6 +33,7 @@ import {useForm} from 'vee-validate';
 import {toast} from '~/components/ui/toast';
 
 const location = useLocation();
+
 const props = defineProps({
   product: {
     type: Object,
@@ -41,6 +42,15 @@ const props = defineProps({
     type: Object,
   },
 });
+
+const bytovyeSizes = ['21S', '24L', '26L', '30L'];
+
+const bytovyeSizesSelected = ref(null);
+
+function setBytovyeSizes(size) {
+  bytovyeSizesSelected.value = size;
+}
+
 const breadcrumbs: Breadcrumb[] = [
   {
     id: 1,
@@ -169,7 +179,7 @@ const onSubmit = form.handleSubmit(async (values) => {
       name: values.name,
       phone: values.phone,
       question: values.question ? values.question : '',
-      product: props.product?.fullTitle,
+      product: `${props.product?.fullTitle.replace('<sup>®</sup>', '').replace('<span class="text-primary">', '').replace('</span>', '')} ${bytovyeSizesSelected.value ? `(${bytovyeSizesSelected.value})` : ''}`,
     };
 
     const data = await $fetch('https://new-event.online/api/application-product', {
@@ -208,7 +218,7 @@ function scrollToMap() {
       <BaseBreadcrumb :links="breadcrumbs"/>
       <div class="flex flex-col mb-[40px] items-center relative">
         <h1
-          class="flex bg-background z-10 px-[16px] leading-none lg:px-[32px] font-bold text-[24px] lg:text-[46px] text-secondary font-display self-start pl-0 lg:pl-0"
+          class="bg-background z-10 px-[16px] lg:px-[32px] font-bold text-[24px] lg:text-[46px] text-secondary font-display self-start pl-0 lg:pl-0"
           v-html="props.product?.fullTitle"></h1>
         <Separator class="top-[calc(50%-2px)] absolute h-[5px] bg-separator-pattern bg-repeat-space"/>
       </div>
@@ -318,7 +328,9 @@ function scrollToMap() {
                 <span class="text-secondary font-bold">
                   Страна изготовления:
                 </span>
-                <span>{{ props.product?.country }}</span>
+                <span>
+                  {{ props.product?.country }}
+                </span>
               </div>
               <div class="flex flex-col">
                 <span class="text-secondary font-bold">Материал:</span>
@@ -363,7 +375,26 @@ function scrollToMap() {
               <span class="text-secondary font-bold">В комплекте:</span>
               <div
                 v-html="props.product?.set"
-                class="set-list"></div>
+                class="set-list mb-4"></div>
+              <template
+                v-if="props.category?.id === 2">
+                <div
+                  class="gap-2 flex mb-4">
+                  <Button
+                    v-for="size in bytovyeSizes"
+                    :key="size"
+                    :variant="bytovyeSizesSelected === size ? 'default' : 'outline'"
+                    class="uppercase"
+                    @click="setBytovyeSizes(size)">
+                    {{ size }}
+                  </Button>
+                </div>
+                <NuxtLink
+                  :to="`/${location.currentLocation}/production/individualnyj-podbor-voronki`"
+                  class="text-foreground underline underline-offset-4 font-semibold hover:no-underline">
+                  Индивидуальный подбор воронки
+                </NuxtLink>
+              </template>
             </div>
           </div>
           <div class="flex flex-col md:flex-row gap-4">
@@ -676,5 +707,9 @@ function scrollToMap() {
 
 a.decorated {
   @apply underline hover:no-underline underline-offset-4;
+}
+
+.button-custom {
+  @apply focus:bg-primary focus:text-primary-foreground focus:border-primary transition-all ;
 }
 </style>
