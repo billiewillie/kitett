@@ -104,6 +104,11 @@ const products = {
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
+						{
+							id: 4,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
+							title: 'Инструкция по эксплуатации',
+						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
 						'<ul>' +
@@ -263,6 +268,11 @@ const products = {
 							id: 4,
 							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/fisio_pro.pdf',
 							title: 'Регистрационное удостоверение на медицинское изделие',
+						},
+						{
+							id: 5,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
+							title: 'Инструкция по эксплуатации',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
