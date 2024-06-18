@@ -638,6 +638,11 @@ const products = {
 							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
 							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
+						{
+							id: 4,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/instruction-minikit-solo.pdf',
+							title: 'Эксплуатационная документация на медицинское изделие',
+						},
 					],
 					review:
 						'<h3 class="font-bold text-secondary">Технология двух фаз сцеживания</h3>' +
@@ -692,7 +697,6 @@ const products = {
 						'<li>Сетевой адаптер (1 шт.)</li>' +
 						'<li>Сумка для хранения принадлежностей (1 шт.)</li>' +
 						'<li>Воронка KOLOR (2 шт.)</li>' +
-
 						'</ul>',
 					cover: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
 					gallery: [
@@ -733,6 +737,11 @@ const products = {
 							id: 3,
 							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
 							title: 'Регистрационное удостоверение на медицинское изделие',
+						},
+						{
+							id: 4,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction-minikit-duo.pdf',
+							title: 'Эксплуатационная документация на медицинское изделие',
 						},
 					],
 					review:
