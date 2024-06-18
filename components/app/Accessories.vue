@@ -52,10 +52,12 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
                   <NuxtPicture
                     :src="accessory.cover"
                     :img-attrs="{class: 'flex w-full h-full object-scale-down'}"
-                    class="w-full flex"/>
-                  <h4
-                    class="text-xl font-bold font-display text-secondary text-center"
-                    v-html="accessory.title"></h4>
+                    class="w-full flex aspect-square"/>
+                  <div class="flex flex-auto">
+                    <h4
+                      class="text-xl font-bold font-display text-secondary text-center"
+                      v-html="accessory.title"></h4>
+                  </div>
                   <Button as-child>
                     <NuxtLink
                       class="text-[18px] uppercase"

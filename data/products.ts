@@ -255,9 +255,14 @@ const products = {
 							title: 'Хранение грудного молока',
 						},
 						{
-							id: 1,
+							id: 3,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
+						},
+						{
+							id: 4,
+							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/fisio_pro.pdf',
+							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
@@ -446,6 +451,11 @@ const products = {
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
+						{
+							id: 3,
+							link: '../../../img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.pdf',
+							title: 'Регистрационное удостоверение на медицинское изделие',
+						},
 					],
 					review:
 						'<h3 class="font-bold text-secondary">Технология двух фаз сцеживания</h3>' +
@@ -613,6 +623,11 @@ const products = {
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
+						{
+							id: 3,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
+							title: 'Регистрационное удостоверение на медицинское изделие',
+						},
 					],
 					review:
 						'<h3 class="font-bold text-secondary">Технология двух фаз сцеживания</h3>' +
@@ -703,6 +718,11 @@ const products = {
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
+						},
+						{
+							id: 3,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
+							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 					],
 					review:
@@ -971,7 +991,7 @@ const products = {
 						{
 							id: 2,
 							link: '../../../img/products/aksessuary/nabor-kolor/individual-nabor-dlya-stsezhivaniya_instrukziarus.pdf',
-							title: 'Инструкция по эксплуатации индивидуального набора для сцеживания KOLOR®',
+							title: 'Инструкция по эксплуатации индивидуального набора для сцеживания KOLOR<sup>®</sup>',
 						},
 					],
 					review:

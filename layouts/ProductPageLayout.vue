@@ -516,10 +516,10 @@ function scrollToMap() {
         <div>
           <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">инструкции и сертификаты</h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
-          <div class="flex items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
             <template v-if="props.product?.instructions[0].link">
               <div
-                class="group basis-full md:basis-1/2 lg:basis-1/3"
+                class="group"
                 v-for="instruction in props.product?.instructions"
                 :key="`${instruction}`"
               >
@@ -529,9 +529,9 @@ function scrollToMap() {
                   :href="instruction.link"
                   target="_blank">
                   <DocumentPDF/>
-                  <span
-                    class="flex-auto flex items-start"
-                    v-html="instruction.title"></span>
+                  <div class="flex flex-auto items-start">
+                    <span v-html="instruction.title"></span>
+                  </div>
                   <Button class="uppercase">
                     скачать
                   </Button>

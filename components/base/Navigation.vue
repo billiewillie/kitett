@@ -118,7 +118,7 @@ const links = [
 </template>
 
 <style>
-.dropdown-menu-item:hover span{
+.dropdown-menu-item:hover span {
   @apply text-background
 }
 </style>
