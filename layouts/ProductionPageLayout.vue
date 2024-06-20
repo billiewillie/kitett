@@ -3,7 +3,7 @@
   lang="ts">
 import {useLocation} from '~/composables/useLocation';
 import type {Breadcrumb} from '~/types';
-import {ref} from 'vue';
+import {useHead, useSeoMeta} from "unhead";
 
 const location = useLocation();
 
@@ -24,6 +24,31 @@ const breadcrumbs: Breadcrumb[] = [
     title: 'Продукция',
   },
 ];
+
+useSeoMeta({
+  ogTitle: 'Товары для грудного вскармливания – Kitett',
+  ogDescription: 'Ручные и электрические молокоотсосы Kitett, а также советы в помощь кормящей маме',
+  ogImage: '/img/ogimage.jpg',
+  ogUrl: 'https://kitett.com/',
+  twitterTitle: 'Товары для грудного вскармливания – Kitett',
+  twitterDescription: 'Ручные и электрические молокоотсосы Kitett, а также советы в помощь кормящей маме',
+  twitterImage: '/img/ogimage.jpg',
+  twitterCard: 'summary_large_image',
+});
+
+useHead({
+  title: 'Товары для грудного вскармливания – Kitett',
+  meta: [
+    {
+      name: 'description',
+      content: 'Ручные и электрические молокоотсосы Kitett, а также советы в помощь кормящей маме',
+    },
+    {
+      name: 'keywords',
+      content: 'Ручные и электрические молокоотсосы Kitett, а также советы в помощь кормящей маме',
+    },
+  ],
+});
 </script>
 
 <template>

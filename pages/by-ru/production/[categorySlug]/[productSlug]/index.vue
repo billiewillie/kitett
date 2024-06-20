@@ -31,26 +31,26 @@ if (!product.value) {
 }
 
 useSeoMeta({
-  ogTitle: `${product.value?.fullTitle} Kitett`,
-  ogDescription: `${product.value?.description} Kitett`,
+  ogTitle: product.value?.titleNoTags,
+  ogDescription: product.value?.descriptionNoTags,
   ogImage: '/img/ogimage.jpg',
   ogUrl: 'https://kitett.com/',
-  twitterTitle: `${product.value?.fullTitle} Kitett`,
-  twitterDescription: `${product.value?.description} Kitett`,
+  twitterTitle: product.value?.titleNoTags,
+  twitterDescription: product.value?.descriptionNoTags,
   twitterImage: '/img/ogimage.jpg',
   twitterCard: 'summary_large_image',
 });
 
 useHead({
-  title: `${product.value?.fullTitle}`,
+  title: product.value?.titleNoTags,
   meta: [
     {
       name: 'description',
-      content: `${product.value?.description}`,
+      content: `${product.value?.descriptionNoTags}`,
     },
     {
       name: 'keywords',
-      content: `${product.value?.description}`,
+      content: `${product.value?.descriptionNoTags}`,
     },
   ],
 });
