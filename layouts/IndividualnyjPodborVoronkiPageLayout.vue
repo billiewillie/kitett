@@ -143,7 +143,6 @@ const onSubmit = form.handleSubmit(async (values) => {
   }
 });
 
-
 const dialogToggle = () => {
   isOpen.value = !isOpen.value;
 };
@@ -156,8 +155,8 @@ const breadcrumbs: Breadcrumb[] = [
   },
   {
     id: 2,
-    title: 'Полезная информация',
-    link: `/${location.value.currentLocation}/help-mom`,
+    title: 'Продукция',
+    link: `/${location.value.currentLocation}/production`,
   },
   {
     id: 3,
@@ -446,6 +445,9 @@ const breadcrumbs: Breadcrumb[] = [
           <p>Выбор размера воронки производится непосредственно после грудного вскармливания или сцеживания. Если замер
             производится в состоянии покоя, то необходимо прибавить 2 мм к полученному размеру для того, чтобы подобрать
             правильный размер воронки KOLOR</p>
+          <br>
+          <p>Если у Вас нет линейки KOLORAMA - на листе бумаги начертите и вырежьте 4 круга диаметрами 21мм, 24мм, 26мм и 30мм. Приложите к груди и определите правильное положение (см. схему выше)
+          </p>
         </div>
         <div class="flex gap-x-6 justify-between">
           <div class="relative shadow-[0_2px_14px_0_rgba(0,0,0,0.15)] flex basis-1/3 items-center justify-center rounded-3xl py-4 px-2">

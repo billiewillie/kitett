@@ -171,7 +171,6 @@ const dialogCarouselToggle = (element) => {
   popupGallery.value = [element, ...props.product?.gallery.filter((item) => item.id !== element.id)];
   isDialogCarouselOpen.value = !isDialogCarouselOpen.value;
 };
-
 const onSubmit = form.handleSubmit(async (values) => {
   try {
     const formData = {
@@ -325,21 +324,15 @@ function scrollToMap() {
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             <div class="flex flex-col gap-[16px] xl:gap-[32px]">
               <div class="flex flex-col">
-                <span class="text-secondary font-bold">
-                  Страна изготовления:
-                </span>
-                <span>
-                  {{ props.product?.country }}
-                </span>
+                <span class="text-secondary font-bold">Страна изготовления:</span>
+                <span>{{ props.product?.country }}</span>
               </div>
               <div class="flex flex-col">
                 <span class="text-secondary font-bold">Материал:</span>
-                <span>{{ props.product?.material }}</span>
+                <span v-html="props.product?.material"></span>
               </div>
               <div class="flex flex-col">
-                <span class="text-secondary font-bold">
-                  Размер:
-                </span>
+                <span class="text-secondary font-bold">Размер:</span>
                 <template v-if="props.product?.size.length < 2">
                   <span
                     v-for="(item, index) in props.product?.size"
@@ -377,7 +370,7 @@ function scrollToMap() {
                 v-html="props.product?.set"
                 class="set-list mb-4"></div>
               <template
-                v-if="props.category?.id === 2">
+                v-if="props.category?.id === 2 || props.product?.id === 31">
                 <div
                   class="gap-2 flex mb-4">
                   <Button
@@ -389,6 +382,7 @@ function scrollToMap() {
                     {{ size }}
                   </Button>
                 </div>
+                <p>Если необходима воронка другого размера, ее можно заказать дополнительно:</p>
                 <NuxtLink
                   :to="`/${location.currentLocation}/production/individualnyj-podbor-voronki`"
                   class="text-foreground underline underline-offset-4 font-semibold hover:no-underline">

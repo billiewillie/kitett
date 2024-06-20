@@ -45,9 +45,12 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
           <CarouselItem
             v-for="accessory in accessories"
             :key="accessory.id"
-            class="pl-1 md:basis-1/2 xl:basis-1/4">
-            <div class="p-1 h-full">
-              <Card class="group h-full lg:border-background lg:shadow-none lg:hover:shadow-md lg:hover:border-accent transition-all">
+            class="pl-4 md:basis-1/2 xl:basis-1/4">
+            <NuxtLink
+              class="h-full"
+              :to="`/${location.currentLocation}/production/aksessuary/${accessory.slug}`"
+            >
+              <Card class="group xl:h-[99%] lg:border-background lg:shadow-none lg:hover:shadow-md lg:hover:border-accent transition-all">
                 <CardContent class="flex flex-col gap-y-4 items-center justify-between p-6 h-full aspect-auto">
                   <NuxtPicture
                     :src="accessory.cover"
@@ -55,18 +58,15 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
                     class="w-full flex aspect-square"/>
                   <div class="flex flex-auto">
                     <h4
-                      class="text-xl font-bold font-display text-secondary text-center"
+                      class="text-lg 2xl:text-xl font-bold font-display text-secondary text-center"
                       v-html="accessory.title"></h4>
                   </div>
-                  <Button as-child>
-                    <NuxtLink
-                      class="text-[18px] uppercase"
-                      :to="`/${location.currentLocation}/production/aksessuary/${accessory.slug}`">смотреть
-                    </NuxtLink>
+                  <Button class="text-[18px] uppercase">
+                    смотреть
                   </Button>
                 </CardContent>
               </Card>
-            </div>
+            </NuxtLink>
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious/>
