@@ -332,7 +332,7 @@ function scrollToMap() {
                 <span v-html="props.product?.material"></span>
               </div>
               <div class="flex flex-col">
-                <span class="text-secondary font-bold">Размер:</span>
+                <span class="text-secondary font-bold">{{ props.product.id === 35 ? 'Объем:' : 'Размер:' }}</span>
                 <template v-if="props.product?.size.length < 2">
                   <span
                     v-for="(item, index) in props.product?.size"
@@ -508,7 +508,13 @@ function scrollToMap() {
             class="description"/>
         </div>
         <div>
-          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">инструкции и сертификаты</h2>
+          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">
+            {{
+              props.category.id === 3 && props.product.id !== 32
+                ? 'рекомендации и сертификаты'
+                : 'инструкции и сертификаты'
+            }}
+          </h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
             <template v-if="props.product?.instructions[0].link">
