@@ -61,7 +61,7 @@ const accessories = products.categories.find(el => el.id === 3)?.productList;
                       class="text-lg 2xl:text-xl font-bold font-display text-secondary text-center"
                       v-html="accessory.title"></h4>
                   </div>
-                  <Button class="text-[18px] uppercase">
+                  <Button class="text-[18px] uppercase leading-none">
                     смотреть
                   </Button>
                 </CardContent>

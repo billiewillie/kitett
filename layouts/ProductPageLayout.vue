@@ -127,7 +127,7 @@ function onSelectDialog() {
   emblaThumbnailApiDialog.value.scrollTo(emblaMainApiDialog.value.selectedScrollSnap());
 }
 
-function onThumbClick(index: number) {
+function onThumbClick(index: string | number) {
   if (!emblaMainApi.value || !emblaThumbnailApi.value) {
     return;
   }
@@ -516,32 +516,35 @@ function scrollToMap() {
             }}
           </h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
-            <template v-if="props.product?.instructions[0].link">
-              <div
-                class="group"
-                v-for="instruction in props.product?.instructions"
-                :key="`${instruction}`"
-              >
-                <a
-                  v-if="instruction.link"
-                  class="flex flex-col gap-[16px] items-center text-center justify-between h-full hover:shadow-md border border-accent lg:border-background hover:border-accent rounded p-4 transition-shadow"
-                  :href="instruction.link"
-                  target="_blank">
-                  <DocumentPDF/>
-                  <div class="flex flex-auto items-start">
-                    <span v-html="instruction.title"></span>
-                  </div>
-                  <Button class="uppercase">
-                    скачать
-                  </Button>
-                </a>
-              </div>
-            </template>
 
+          <div
+            v-if="props.product?.instructions[0].text"
+            class="grid grid-cols-1 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
+            <div v-html="props.product?.instructions[0].text"></div>
+          </div>
+
+          <div
+            v-else
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
             <div
-              v-else
-              v-html="props.product?.instructions[0].text"></div>
+              class="group"
+              v-for="instruction in props.product?.instructions"
+              :key="`${instruction}`"
+            >
+              <a
+                v-if="instruction.link"
+                class="flex flex-col gap-[16px] items-center text-center justify-between h-full hover:shadow-md border border-accent lg:border-background hover:border-accent rounded p-4 transition-shadow"
+                :href="instruction.link"
+                target="_blank">
+                <DocumentPDF/>
+                <div class="flex flex-auto items-start">
+                  <span v-html="instruction.title"></span>
+                </div>
+                <Button class="uppercase">
+                  скачать
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

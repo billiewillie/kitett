@@ -254,11 +254,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/kitett_fisio_pro_instrukzia.pdf',
-							title: 'Инструкция по эксплуатации электрического молокоотсоса Kitett FISIO®',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/hranenie-grudnogo-moloka.pdf',
 							title: 'Хранение грудного молока',
@@ -458,11 +453,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/klinicheskie-molokootsosy/kolor-play/kolorplay_instrukzia_rus.pdf',
-							title: 'Инструкция по эксплуатации ручного молокоотсоса KOLOR PLAY<sup>®</sup>',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -513,7 +503,6 @@ const products = {
 					},
 					set: '<ul>' +
 						'<li>Основной прибор (Электрический молокоотсос MINIKIT SOLO<sup>®</sup>) (1 шт.)</li>' +
-						'<li>Воронка KOLOR, размер 24L (1 шт.)</li>' +
 						'<li>Клапан «Clean Valve» (1 шт.)</li>' +
 						'<li>Контейнер для сбора и хранения грудного молока, 100 мл (1 шт.)</li>' +
 						'<li>Крышка контейнера (1 шт.)</li>' +
@@ -632,11 +621,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/minikit_solo_instrukzia_rus_last.pdf',
-							title: 'Инструкция по эксплуатации электрического молокоотсоса MINIKIT SOLO<sup>®</sup>',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -649,7 +633,7 @@ const products = {
 						{
 							id: 4,
 							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/instruction-minikit-solo.pdf',
-							title: 'Эксплуатационная документация на медицинское изделие',
+							title: 'Инструкция по эксплуатации медицинского изделия',
 						},
 					],
 					review:
@@ -733,11 +717,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction_minikit_duo.pdf',
-							title: 'Инструкция по эксплуатации электрического молокоотсоса MINIKIT DUO<sup>®</sup>',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -750,7 +729,7 @@ const products = {
 						{
 							id: 4,
 							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction-minikit-duo.pdf',
-							title: 'Эксплуатационная документация на медицинское изделие',
+							title: 'Инструкция по эксплуатации медицинского изделия',
 						},
 					],
 					review:

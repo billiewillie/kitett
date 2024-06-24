@@ -146,9 +146,9 @@ const location = useLocation();
                       :src="video.cover"/>
                   </div>
 
-                  <h3 class="text-xl font-display text-gray uppercase">
-                    {{ video.title }}
-                  </h3>
+                  <h3
+                    class="text-xl font-display text-gray uppercase"
+                    v-html="video.title"></h3>
 
                   <Dialog>
                     <DialogTrigger as-child>

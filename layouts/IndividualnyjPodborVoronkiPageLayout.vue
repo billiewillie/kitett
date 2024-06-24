@@ -160,7 +160,7 @@ const breadcrumbs: Breadcrumb[] = [
   },
   {
     id: 3,
-    title: 'Забота о груди',
+    title: 'Индивидуальный подбор воронки',
   },
 ];
 </script>
@@ -446,7 +446,14 @@ const breadcrumbs: Breadcrumb[] = [
             производится в состоянии покоя, то необходимо прибавить 2 мм к полученному размеру для того, чтобы подобрать
             правильный размер воронки KOLOR</p>
           <br>
-          <p>Если у Вас нет линейки KOLORAMA - на листе бумаги начертите и вырежьте 4 круга диаметрами 21мм, 24мм, 26мм и 30мм. Приложите к груди и определите правильное положение (см. схему выше)
+          <NuxtLink to="/img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf">
+            <b class="underline hover:no-underline underline-offset-4">Линейка KOLORAMA</b>
+          </NuxtLink>
+          <br>
+          <br>
+          <p>
+            Если у Вас нет линейки KOLORAMA - на листе бумаги начертите и вырежьте 4 круга диаметрами 21мм, 24мм, 26мм и
+            30мм. Приложите к груди и определите правильное положение (см. схему выше)
           </p>
         </div>
         <div class="flex gap-x-6 justify-between">
