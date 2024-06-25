@@ -92,14 +92,14 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/ekspluataciya-electro-molokootsosa.pdf',
-							title: 'Инструкция по эксплуатации электрического молокоотсоса Kitett<sup>®</sup> FISIO',
+							id: 4,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
+							title: 'Инструкция по эксплуатации',
 						},
 						{
-							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/hranenie-grudnogo-moloka.pdf',
-							title: 'Хранение грудного молока',
+							id: 5,
+							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/fisio_pro.pdf',
+							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 						{
 							id: 3,
@@ -107,9 +107,9 @@ const products = {
 							title: 'Линейка KOLORAMA',
 						},
 						{
-							id: 4,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
-							title: 'Инструкция по эксплуатации',
+							id: 2,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/hranenie-grudnogo-moloka.pdf',
+							title: 'Хранение грудного молока',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
@@ -254,14 +254,9 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/hranenie-grudnogo-moloka.pdf',
-							title: 'Хранение грудного молока',
-						},
-						{
-							id: 3,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка KOLORAMA',
+							id: 5,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
+							title: 'Инструкция по эксплуатации',
 						},
 						{
 							id: 4,
@@ -269,9 +264,14 @@ const products = {
 							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 						{
-							id: 5,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
-							title: 'Инструкция по эксплуатации',
+							id: 3,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							title: 'Линейка KOLORAMA',
+						},
+						{
+							id: 2,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/hranenie-grudnogo-moloka.pdf',
+							title: 'Хранение грудного молока',
 						},
 					],
 					review: '<p class="font-bold text-secondary">Сцеживание молока может быть необходимо по ряду причин:</p>' +
@@ -453,14 +453,14 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка KOLORAMA',
-						},
-						{
 							id: 3,
 							link: '../../../img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.pdf',
 							title: 'Регистрационное удостоверение на медицинское изделие',
+						},
+						{
+							id: 2,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -621,6 +621,11 @@ const products = {
 					],
 					instructions: [
 						{
+							id: 4,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/instruction-minikit-solo.pdf',
+							title: 'Инструкция по эксплуатации медицинского изделия',
+						},
+						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -629,11 +634,6 @@ const products = {
 							id: 3,
 							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
 							title: 'Регистрационное удостоверение на медицинское изделие',
-						},
-						{
-							id: 4,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/instruction-minikit-solo.pdf',
-							title: 'Инструкция по эксплуатации медицинского изделия',
 						},
 					],
 					review:
@@ -717,9 +717,9 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка KOLORAMA',
+							id: 4,
+							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction-minikit-duo.pdf',
+							title: 'Инструкция по эксплуатации медицинского изделия',
 						},
 						{
 							id: 3,
@@ -727,9 +727,9 @@ const products = {
 							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 						{
-							id: 4,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction-minikit-duo.pdf',
-							title: 'Инструкция по эксплуатации медицинского изделия',
+							id: 2,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
@@ -989,14 +989,14 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 1,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
-							title: 'Линейка KOLORAMA',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/aksessuary/nabor-kolor/individual-nabor-dlya-stsezhivaniya_instrukziarus.pdf',
 							title: 'Инструкция по эксплуатации индивидуального набора для сцеживания KOLOR<sup>®</sup>',
+						},
+						{
+							id: 1,
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							title: 'Линейка KOLORAMA',
 						},
 					],
 					review:
