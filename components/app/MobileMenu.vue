@@ -378,7 +378,7 @@ const onSubmit = form.handleSubmit(async (values) => {
                 <div class="space-y-1 leading-none">
                   <FormLabel :forId="checkId">
                     Я согласен(на) на обработку персональных данных.
-                    ООО "БиоЛайн" гарантирует конфиденциальность получаемой информации.
+                    ООО "БиоСистемы" гарантирует конфиденциальность получаемой информации.
                   </FormLabel>
                   <FormMessage/>
                 </div>
