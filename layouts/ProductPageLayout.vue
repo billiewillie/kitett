@@ -510,8 +510,8 @@ function scrollToMap() {
         <div>
           <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">
             {{
-              props.category.id === 3 && props.product.id !== 32
-                ? 'рекомендации и сертификаты'
+              props.category.id === 3
+                ? 'рекомендации и инструкции'
                 : 'инструкции и сертификаты'
             }}
           </h2>

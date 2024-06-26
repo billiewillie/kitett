@@ -153,12 +153,12 @@ const onSubmit = form.handleSubmit((values) => {
         <FormItem>
           <div class="flex flex-col h-full">
             <FormControl>
-                <Textarea
-                  placeholder="Ваш вопрос"
-                  class="resize-none flex-auto flex"
-                  :id="questionId"
-                  v-bind="componentField"
-                />
+              <Textarea
+                placeholder="Ваш вопрос"
+                class="resize-none flex-auto flex"
+                :id="questionId"
+                v-bind="componentField"
+              />
             </FormControl>
             <FormMessage/>
           </div>
@@ -184,7 +184,7 @@ const onSubmit = form.handleSubmit((values) => {
           <div class="space-y-1 leading-none">
             <FormLabel :forId="checkId">
               Я согласен(на) на обработку персональных данных.
-              ООО "БиоЛайн" гарантирует конфиденциальность получаемой информации.
+              ООО "БиоСистемы" гарантирует конфиденциальность получаемой информации.
             </FormLabel>
             <FormMessage/>
           </div>
