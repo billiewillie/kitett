@@ -21,7 +21,7 @@ const location = useLocation();
     <div class="relative xl:absolute order-1 mb-[32px] xl:mb-0 top-0 xl:left-1/2 w-full xl:w-1/2 min-h-[299px] md:min-h-[670px] xl:min-h-0 md:h-full">
       <div class="overflow-hidden xl:rounded-tl-[350px] bg-[#9CA1A2] h-full">
         <NuxtPicture
-          class="flex w-full items-center justify-center transition-opacity z-10 relative"
+          class="flex w-full h-full items-center justify-center transition-opacity z-10 relative"
           :img-attrs="{class:'object-cover object-top w-full h-full flex'}"
           src="/img/first-screen.jpg"/>
       </div>
