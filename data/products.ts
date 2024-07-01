@@ -1246,7 +1246,7 @@ const products = {
 								'<li>Снимите защитную бумагу с клеевого слоя</li>' +
 								'<li>Прикрепите клеевым слоем на внутреннюю поверхность нижнего белья</li>' +
 								'</ol>' +
-								'<img src="../../../img/products/aksessuary/fisio-pad/instruc_fisio_pad.jpg" alt="img">',
+								'<img src="../../../img/products/aksessuary/fisio-pad/instruc_fisio_pad.jpg" style="max-width: 300px;margin: auto" alt="img">',
 						},
 					],
 					review:
