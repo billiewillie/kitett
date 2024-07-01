@@ -150,7 +150,7 @@ function scrollToMap() {
           :key="key">
           <li
             v-if="key !== 'spb' && key !== 'minsk'"
-            class="card">
+            class="card flex flex-col items-start">
             <h3 class="title text-[18px] font-bold">{{ branch.city }}</h3>
             <br>
             <address class="not-italic 2xl:min-h-[48px]">{{ branch.address }}</address>
@@ -159,6 +159,7 @@ function scrollToMap() {
             <br>
             <Button
               class="text-[18px]"
+              v-if="branch.map"
               @click="setCoordinates(branch.map);scrollToMap()">
               посмотреть на карте
             </Button>

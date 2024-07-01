@@ -311,6 +311,8 @@ function scrollToMap() {
                   </div>
                 </CarouselItem>
               </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
             </Carousel>
           </div>
         </div>

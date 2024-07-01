@@ -74,12 +74,9 @@ const branches: Record<string, Branch> = {
 	'ekb': {
 		id: 8,
 		country: 'Россия',
-		index: 620027,
 		city: 'Екатеринбург',
-		address: 'ул. Николая Никонова, д. 21',
 		phone: '+7 (343) 357-30-26',
 		email: 'main@bioline.ru',
-		map: [60.595732, 56.847715],
 	},
 };
 

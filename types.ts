@@ -4,11 +4,11 @@ import type { FLAGS } from '~/data/constants';
 export interface Branch {
   id: number;
   country: string | null;
-  index: number;
-  city: string;
-  address: string;
   phone: string;
   email: string;
+  index?: number;
+  city?: string;
+  address?: string;
   map?: number[];
 }
 
