@@ -4,7 +4,6 @@
 import {useLocation} from '~/composables/useLocation';
 import type {Breadcrumb} from '~/types';
 import {COMMON_STATEMENTS, SELECT_OPTIONS} from '~/data/constants';
-import Voronki21 from '../public/img/products/voronki/voronki-21.jpg';
 import {
   Select,
   SelectContent,
@@ -22,7 +21,12 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '~/components/ui/dialog';
-import {FormControl, FormField, FormItem, FormLabel, FormMessage} from '~/components/ui/form';
+import {
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage
+} from '~/components/ui/form';
 import {Button} from '~/components/ui/button';
 import {Input} from '~/components/ui/input';
 import {useId} from '#app';
@@ -38,13 +42,13 @@ const VORONKI = ref([
     id: 1,
     title: '21 мм',
     type: 'S',
-    image: '/img/products/voronki/voronki-21.jpg',
+    image: '/img/products/voronki/voronka-violet-1.jpg',
   },
   {
     id: 2,
     title: '24 мм',
     type: 'S',
-    image: '/img/products/voronki/voronki-24.jpg',
+    image: '/img/products/voronki/voronka-orange-1.jpg',
   },
   {
     id: 3,
@@ -446,9 +450,9 @@ const breadcrumbs: Breadcrumb[] = [
             производится в состоянии покоя, то необходимо прибавить 2 мм к полученному размеру для того, чтобы подобрать
             правильный размер воронки KOLOR</p>
           <br>
-          <NuxtLink to="/img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf">
+          <a href="/img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf" target="_blank">
             <b class="underline hover:no-underline underline-offset-4">Линейка KOLORAMA</b>
-          </NuxtLink>
+          </a>
           <br>
           <br>
           <p>

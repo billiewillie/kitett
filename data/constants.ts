@@ -187,12 +187,12 @@ export const VORONKI = [
   {
     id: 1,
     title: '21 мм',
-    image: '../../../img/products/voronki/voronki-21.jpg',
+    image: '../../../img/products/voronki/voronka-violet-1.jpg',
   },
   {
     id: 2,
     title: '24 мм',
-    image: '../../../img/products/voronki/voronki-24.jpg',
+    image: '../../../img/products/aksessuary/voronki-kolor/voronka-orange.jpg',
   },
   {
     id: 3,

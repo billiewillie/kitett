@@ -103,7 +103,7 @@ const products = {
 						},
 						{
 							id: 3,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 						{
@@ -265,7 +265,7 @@ const products = {
 						},
 						{
 							id: 3,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 						{
@@ -342,14 +342,9 @@ const products = {
 					cover: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
 					gallery: [
 						{
-							id: 1,
+							id: 222,
 							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.jpg',
-						},
-						{
-							id: 2,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet.jpg',
+							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-2.jpg',
 						},
 						{
 							id: 22,
@@ -357,9 +352,9 @@ const products = {
 							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-1.jpg',
 						},
 						{
-							id: 222,
+							id: 2,
 							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet-2.jpg',
+							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-violet.jpg',
 						},
 						{
 							id: 3,
@@ -367,39 +362,14 @@ const products = {
 							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange.jpg',
 						},
 						{
-							id: 33,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-1.jpg',
-						},
-						{
-							id: 333,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-orange-2.jpg',
-						},
-						{
 							id: 4,
 							type: 'image',
 							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green.jpg',
 						},
 						{
-							id: 44,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-green-1.jpg',
-						},
-						{
 							id: 5,
 							type: 'image',
 							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue.jpg',
-						},
-						{
-							id: 55,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-1.jpg',
-						},
-						{
-							id: 555,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/kolor-play/kolor-play-blue-2.jpg',
 						},
 						{
 							id: 6,
@@ -459,7 +429,7 @@ const products = {
 						},
 						{
 							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 					],
@@ -516,51 +486,6 @@ const products = {
 					cover: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
 					gallery: [
 						{
-							id: 1,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/minikit-solo.jpg',
-						},
-						{
-							id: 2,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-front.jpg',
-						},
-						{
-							id: 3,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-side.jpg',
-						},
-						{
-							id: 4,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue.jpg',
-						},
-						{
-							id: 5,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue-1.jpg',
-						},
-						{
-							id: 6,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-green.jpg',
-						},
-						{
-							id: 7,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-green-1.jpg',
-						},
-						{
-							id: 8,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange.jpg',
-						},
-						{
-							id: 9,
-							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange-1.jpg',
-						},
-						{
 							id: 10,
 							type: 'image',
 							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet.jpg',
@@ -571,9 +496,29 @@ const products = {
 							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-1.jpg',
 						},
 						{
-							id: 12,
+							id: 4,
 							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-violet-3.jpg',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-blue.jpg',
+						},
+						{
+							id: 6,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-green.jpg',
+						},
+						{
+							id: 8,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-orange.jpg',
+						},
+						{
+							id: 2,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-front.jpg',
+						},
+						{
+							id: 3,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-solo/solo-box-side.jpg',
 						},
 						{
 							id: 13,
@@ -627,7 +572,7 @@ const products = {
 						},
 						{
 							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 						{
@@ -696,7 +641,27 @@ const products = {
 						{
 							id: 1,
 							type: 'image',
-							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit_duo.jpg',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-violet.jpg',
+						},
+						{
+							id: 11,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-violet-1.jpg',
+						},
+						{
+							id: 4,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-blue.jpg',
+						},
+						{
+							id: 44,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-green.jpg',
+						},
+						{
+							id: 9,
+							type: 'image',
+							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-orange.jpg',
 						},
 						{
 							id: 2,
@@ -709,7 +674,7 @@ const products = {
 							link: '/img/products/klinicheskie-molokootsosy/minikit-duo/minikit-duo-2.jpg',
 						},
 						{
-							id: 4,
+							id: 5,
 							type: 'video',
 							cover: '/img/video-covers/video-6-cover.jpg',
 							link: 'https://www.youtube.com/embed/0rYerAG6eYs?si=GNxzCo6CiIcO-Vsu',
@@ -728,7 +693,7 @@ const products = {
 						},
 						{
 							id: 2,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 					],
@@ -811,29 +776,14 @@ const products = {
 							link: '/img/products/aksessuary/voronki-kolor/voronka-blue.jpg',
 						},
 						{
-							id: 4,
-							type: 'image',
-							link: '/img/products/aksessuary/voronki-kolor/voronka-blue-1.jpg',
-						},
-						{
 							id: 5,
 							type: 'image',
 							link: '/img/products/aksessuary/voronki-kolor/voronka-green.jpg',
 						},
 						{
-							id: 6,
-							type: 'image',
-							link: '/img/products/aksessuary/voronki-kolor/voronka-green-1.jpg',
-						},
-						{
 							id: 7,
 							type: 'image',
 							link: '/img/products/aksessuary/voronki-kolor/voronka-orange.jpg',
-						},
-						{
-							id: 8,
-							type: 'image',
-							link: '/img/products/aksessuary/voronki-kolor/voronka-orange-1.jpg',
 						},
 						{
 							id: 9,
@@ -854,7 +804,7 @@ const products = {
 					instructions: [
 						{
 							id: 1,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 					],
@@ -862,7 +812,7 @@ const products = {
 						'<h3 class="font-bold text-secondary">Идеальный размер воронки</h3>' +
 						'<p>Размеры воронок KOLOR<sup>®</sup> отличаются по внутреннему диаметру (21-24-26-30 мм) и по полноте груди (S и L). Для определения нужного размера воронки воспользуйтесь:</p>' +
 						'<ul>' +
-						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf" target="_blank" class="decorated">линейкой KOLORAMA</a></li>' +
+						'<li><a href="../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf" target="_blank" class="decorated">линейкой KOLORAMA</a></li>' +
 						'</ul>' +
 						'<br>' +
 						'<h3 class="font-bold text-secondary">Удобство в использовании</h3>' +
@@ -995,7 +945,7 @@ const products = {
 						},
 						{
 							id: 1,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorrama.pdf',
+							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
 						},
 					],
