@@ -10,6 +10,7 @@ const products = {
 				{
 					id: 11,
 					slug: 'fisio',
+					code: 'РУ № РЗН 2021/13321 от 21.06.2022 г',
 					titleNoTags: 'Клинический молокоотсос FISIO',
 					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup></span>',
 					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup></span>',
@@ -127,6 +128,7 @@ const products = {
 				{
 					id: 12,
 					slug: 'fisio-pro',
+					code: 'РУ № РЗН 2021/13321 от 21.06.2022 г',
 					titleNoTags: 'Клинический молокоотсос FISIO PRO',
 					title: 'Клинический молокоотсос <span class="text-primary">FISIO<sup>®</sup> PRO</span>',
 					fullTitle: 'Клинический электрический молокоотсос <span class="text-primary">FISIO<sup>®</sup> PRO</span>',
@@ -288,6 +290,7 @@ const products = {
 				{
 					id: 21,
 					slug: 'kolor-play',
+					code: 'РУ № РЗН 2021/14097 от 21.06.2022 г',
 					titleNoTags: 'Ручной молокоотсос KOLOR PLAY',
 					title: 'Ручной молокоотсос <span class="text-primary">KOLOR PLAY<sup>®</sup></span>',
 					fullTitle: 'Ручной молокоотсос <span class="text-primary">KOLOR PLAY<sup>®</sup></span>',
@@ -424,6 +427,7 @@ const products = {
 				{
 					id: 22,
 					slug: 'minikit-solo',
+					code: 'РУ № РЗН 2021/15891 от 21.06.2022 г',
 					titleNoTags: 'Электрический молокоотсос MINIKIT SOLO',
 					title: 'Электрический молокоотсос <span class="text-primary">MINIKIT SOLO<sup>®</sup></span>',
 					fullTitle: 'Электрический молокоотсос <span class="text-primary">MINIKIT SOLO<sup>®</sup></span>',
@@ -564,6 +568,7 @@ const products = {
 				{
 					id: 23,
 					slug: 'minikit-duo',
+					code: 'РУ № РЗН 2021/15891 от 21.06.2022 г',
 					titleNoTags: 'Электрический молокоотсос двойного сцеживания MINIKIT DUO',
 					title: 'Электрический молокоотсос двойного сцеживания <span class="text-primary">MINIKIT DUO<sup>®</sup></span>',
 					fullTitle: 'Двойной электрический молокоотсос <span class="text-primary">MINIKIT DUO<sup>®</sup></span>',

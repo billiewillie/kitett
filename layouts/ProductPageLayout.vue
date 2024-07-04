@@ -319,6 +319,7 @@ function scrollToMap() {
         <div>
           <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">характеристики</h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
+          <p v-if="props.product?.code">{{  props.product?.code }}<br><br></p>
           <p
             class="mb-[24px]"
             v-if="props.product?.description && props.product.description.length > 0"
