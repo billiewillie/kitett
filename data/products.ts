@@ -92,16 +92,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 4,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
-							title: 'Инструкция по эксплуатации',
-						},
-						{
-							id: 5,
-							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/fisio_pro.pdf',
-							title: 'Регистрационное удостоверение на медицинское изделие',
-						},
-						{
 							id: 3,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -253,16 +243,6 @@ const products = {
 						},
 					],
 					instructions: [
-						{
-							id: 5,
-							link: '../../../img/products/bytovye-molokootsosy/fisio/el-doc.pdf',
-							title: 'Инструкция по эксплуатации',
-						},
-						{
-							id: 4,
-							link: '../../../img/products/bytovye-molokootsosy/fisio-pro/fisio_pro.pdf',
-							title: 'Регистрационное удостоверение на медицинское изделие',
-						},
 						{
 							id: 3,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
@@ -423,11 +403,6 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 3,
-							link: '../../../img/products/klinicheskie-molokootsosy/kolor-play/kolor_play.pdf',
-							title: 'Регистрационное удостоверение на медицинское изделие',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
@@ -566,19 +541,9 @@ const products = {
 					],
 					instructions: [
 						{
-							id: 4,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-solo/instruction-minikit-solo.pdf',
-							title: 'Инструкция по эксплуатации медицинского изделия',
-						},
-						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
 							title: 'Линейка KOLORAMA',
-						},
-						{
-							id: 3,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
-							title: 'Регистрационное удостоверение на медицинское изделие',
 						},
 					],
 					review:
@@ -681,16 +646,6 @@ const products = {
 						},
 					],
 					instructions: [
-						{
-							id: 4,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/instruction-minikit-duo.pdf',
-							title: 'Инструкция по эксплуатации медицинского изделия',
-						},
-						{
-							id: 3,
-							link: '../../../img/products/klinicheskie-molokootsosy/minikit-duo/minikit.pdf',
-							title: 'Регистрационное удостоверение на медицинское изделие',
-						},
 						{
 							id: 2,
 							link: '../../../img/products/bytovye-molokootsosy/fisio/lineika_colorama.pdf',
