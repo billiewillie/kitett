@@ -510,7 +510,7 @@ function scrollToMap() {
             class="description"/>
         </div>
         <div>
-          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">рекомендации</h2>
+          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">дополнительные материалы</h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
           <div
             v-if="props.product?.instructions[0].text"
