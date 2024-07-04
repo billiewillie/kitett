@@ -510,15 +510,8 @@ function scrollToMap() {
             class="description"/>
         </div>
         <div>
-          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">
-            {{
-              props.category.id === 3
-                ? 'рекомендации и инструкции'
-                : 'инструкции и сертификаты'
-            }}
-          </h2>
+          <h2 class="title font-display font-bold text-[24px] xl:text-[30px]">рекомендации</h2>
           <Separator class="bg-separator-pattern h-[5px] mt-[16px] mb-[24px]"/>
-
           <div
             v-if="props.product?.instructions[0].text"
             class="grid grid-cols-1 items-stretch gap-2 xl:gap-4 flex-wrap md:flex-nowrap">
